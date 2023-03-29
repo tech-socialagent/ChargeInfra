@@ -1,0 +1,78 @@
+.construction_main{
+    background: #222831;
+    height: 100%;
+    padding: 10px 60px 30px 60px;
+    background-image: url('../assets/construction/construct_back.png');
+    background-size:contain;
+}
+.residental_construction_heading{
+    font-family: "Brandon_reg";
+font-weight: 600;
+    font-size: 24px;
+    text-align: left;
+    color: white;
+    text-transform:uppercase;
+}
+.construction_detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.construction_left{
+    flex: 50%;
+}
+.residental_construction_img{
+    height: 350px;
+}
+.construction_right{
+    flex: 50%;
+}
+.residental_construction_title{
+    font-family: "Brandon_reg";
+    font-size: 48px;
+font-weight: 800;
+    color: #CDAF4C;
+text-align:left;
+margin-top: -2%;
+}
+.residental_construction_desc{
+    font-size: 24px;
+text-align: left;
+color: white;
+font-family: "Brandon_reg";
+margin-top: -5%;
+}
+.residental_construction_list{
+font-size: 24px;
+text-align: left;
+color: white;
+font-family: "Brandon_reg";
+}
+@media screen and (max-width:900px) {
+    .construction_main{
+        padding: 5px 30px 5px 30px;
+    }
+    .construction_detail{
+        flex-direction: column;
+    }
+    .residental_construction_img{
+        height: 310px;
+        width:500px;
+    }
+    .residental_construction_title{
+        font-size: 40px;
+        padding-top: 10px;
+    }
+}
+@media screen and (max-width:480px) {
+    .residental_construction_img{
+        height: 210px;
+        width:300px;
+    }
+    .residental_construction_title{
+        font-size: 35px;
+        padding-top: 10px;
+    }
+
+
+}

@@ -1,0 +1,776 @@
+{
+  "navbar": {
+    "logo": "logo.png"
+  },
+  "home_section": {
+    "sub_tagline": "ARCHITECTURE DESIGN",
+    "tagline": "Elevate your space with style.",
+    "home_section_desc": "We enhance the appearance and overall ambiance of a living space by adding elements of style, design, and sophistication.",
+    "book_appointment_text": "Book free consultation",
+    "home_back_carasoul_img1": "home_page1.jpg",
+    "home_back_carasoul_img2": "home_page2.png",
+    "home_back_carasoul_img3": "home_page3.png",
+    "home_back_carasoul_img4": "home_page4.png"
+  },
+  "about_section": {
+    "about_img": "Pic.png",
+    "about_us_heading": "ABOUT US",
+    "about_us_title": "We’re here to bring your Vision to Life!",
+    "about_us_desc": "LOOK AND LIVE creates beautiful and functional living spaces. Our mission is to provide high-quality, aesthetically pleasant, useful, and long-lasting home decor products.We are constantly exploring new ways to reduce our environmental impact and promote sustainable living & find the perfect products for your home.",
+    "book_appointment_text": "Book free consultation"
+  },
+  "choose_us_section": {
+    "choose_heading": "Why Choose us?",
+    "choose_us_1": {
+      "img": "choose1.png",
+      "number": "05+",
+      "des": " Years Experience "
+    },
+    "choose_us_2": {
+      "img": "choose2.png",
+      "number": "100+",
+      "des": "Projects Delivered"
+    },
+    "choose_us_3": {
+      "img": "choose3.png",
+      "number": "50+",
+      "des": "Skilled interior designer"
+    },
+    "choose_us_4": {
+      "img": "choose4.png",
+      "number": "200+",
+      "des": "Workforce"
+    },
+    "choose_us_5": {
+      "img": "choose5.png",
+      "number": "09+",
+      "des": "Cities "
+    },
+    "choose_us_6": {
+      "img": "choose6.png",
+      "number": "05+",
+      "des": " Years Experience "
+    },
+    "choose_us_7": {
+      "img": "choose7.png",
+      "number": "100%",
+      "des": "Transparent Pricing"
+    },
+    "choose_warranty": {
+      "back_img": "backgroundImg.svg",
+      "heading": "Warranty",
+      "des1": "Quality that lasts a decade, guaranteed.",
+      "des2": "Maximize your investment with our 1-year on-site service warranty."
+    },
+    "technology_science": {
+      "heading": "Technology & Science",
+      "desc1": "AquaBloc® Technology - Hermetically sealed edges that ensure no moisture enters the panels of your modular cabinets.",
+      "desc2": " AntiBubble® Technology - Super seamless panels without air bubbles for your modular cabinets.",
+      "desc3": "DuraBuild™ Technology - Robust structure for modular cabinets, making them strong andlong-lasting. ",
+      "desc4": "Design Science - Modular kitchens with improved accessibility that makes daily tasks more efficient and reduces stress on the body."
+    }
+  },
+  "our_project": {
+    "our_project_heading": "Our Project",
+    "our_project_card": [
+      {
+        "project_img": "project11.png",
+        "project_name": "Gentleton Lake View palace",
+        "desc": "LOOK AND LIVE is best known for delivering the highest quality services that fulfils customer’s preferences and needs. Your success is our paramount passion for customer satisfaction, which is essential for us. We anticipate and cater to your needs to execute a project that rightly fits your preferences."
+      },
+      {
+        "project_img": "project13.png",
+        "project_name": "Bricstal Lake palace",
+        "desc": "LOOK AND LIVE is best known for delivering the highest quality services that fulfils customer’s preferences and needs. Your success is our paramount passion for customer satisfaction, which is essential for us. We anticipate and cater to your needs to execute a project that rightly fits your preferences."
+      },
+      {
+        "project_img": "project14.png",
+        "project_name": "Bangalore Luxury Interiors",
+        "desc": "LOOK AND LIVE is best known for delivering the highest quality services that fulfils customer’s preferences and needs. Your success is our paramount passion for customer satisfaction, which is essential for us. We anticipate and cater to your needs to execute a project that rightly fits your preferences."
+      }
+    ],
+    "gentleton_project": {
+      "gentleton_project_back": "backimg.png",
+      "gentleton_project_heading": "Bricstal lake Palace",
+      "gentleton_project_desc": "LOOK AND LIVE is best known for delivering the highest quality services that fulfils customer’s preferences and needs. Your success is our paramount passion for customer satisfaction, which is essential for us. We anticipate and cater to your needs to execute a project that rightly fits your preferences.",
+      "gentleton_project_pic": [
+        "home_page1.jpg",
+        "home_page1.jpg",
+        "home_page1.jpg",
+        "home_page1.jpg",
+        "home_page1.jpg",
+        "home_page1.jpg",
+        "home_page1.jpg",
+        "home_page1.jpg",
+        "home_page1.jpg"
+      ]
+    }
+  },
+  "services_section": {
+    "service_heading": "Services We Deliver",
+    "services_desc": "Transform your home with our expert solutions.",
+    "services_list": [
+      {
+        "img": "1st.png",
+        "name": "Modular Kitchens",
+        "desc": "Custimized cooking spaces for you."
+      },
+      {
+        "img": "2nd.png",
+        "name": "Modular Wardrobes",
+        "desc": "Design your dream closet with modularity"
+      },
+      {
+        "img": "3rd.png",
+        "name": "Lighting",
+        "desc": "Brighten up your space with elegance"
+      },
+      {
+        "img": "4th.png",
+        "name": "Flooring",
+        "desc": "Create your dream space with stylish florring"
+      },
+      {
+        "img": "5th.png",
+        "name": "False Ceiling",
+        "desc": "Style your ceiling with modern touch"
+      },
+      {
+        "img": "6th.png",
+        "name": "Home Automation",
+        "desc": "Strong foundations for lasting communities."
+      },
+      {
+        "img": "7th.png",
+        "name": "Electrical Work",
+        "desc": "Plug into style with electrical decor"
+      },
+      {
+        "img": "8th.png",
+        "name": "Wall Design & Painting",
+        "decs": "Make your walls a work of art."
+      },
+      {
+        "img": "9th.png",
+        "name": "Conceptualization",
+        "desc": "Strong foundations for lasting communities."
+      },
+      {
+        "img": "10th.png",
+        "name": "Plumbing",
+        "desc": "Strong foundations for lasting communities."
+      },
+      {
+        "img": "11th.png",
+        "name": "Indoor Landscaping",
+        "desc": "Strong foundations for lasting communities."
+      },
+      {
+        "img": "12th.png",
+        "name": "Customised Furniture",
+        "desc": "Strong foundations for lasting communities."
+      },
+      {
+        "img": "13th.png",
+        "name": "Construction",
+        "desc": "Strong foundations for lasting communities."
+      },
+      {
+        "img": "14th.png",
+        "name": "3d Visualisation",
+        "desc": "Strong foundations for lasting communities."
+      }
+    ]
+  },
+  "residental_construction": {
+    "heading": "Residental Construction",
+    "construction_pic": "construction_main.png",
+    "construction_title": "Creating spaces that inspire and delight.",
+    "construction_desc": "Residential construction is the process of expanding, renovating, building a new house or areas designed to be utilised for residential purposes.",
+    "construction_desc_list": [
+      {
+        "list_item": "We are dedicated to provide high-quality construction services that are both timely and cost-effective. To guarantee that your house is built to last, we only utilise the best materials and cutting-edge construction processes."
+      },
+      {
+        "list_item": "We also adhere to all safety standards and regulations to ensure a safe and secure living space for our client"
+      },
+      {
+        "list_item": "Our team of experts will collaborate with you to understand the vision and requirements for your home and create a cohesive and harmonious design."
+      }
+    ]
+  },
+  "how_it_works": {
+    "how_it_works_heading": "How It Works",
+    "how_it_works_card": [
+      {
+        "how_it_works_pic": "work1.png",
+        "how_it_works_name": "Meet a designer"
+      },
+      {
+        "how_it_works_pic": "work2.png",
+        "how_it_works_name": "Execution begins",
+        "how_it_works_bold_text": "5% Payment"
+      },
+      {
+        "how_it_works_pic": "work3.png",
+        "how_it_works_name": "Execution begins",
+        "how_it_works_bold_text": "50% Payment"
+      },
+      {
+        "how_it_works_pic": "work4.png",
+        "how_it_works_name": "Final Installations",
+        "how_it_works_bold_text": "100% Payment"
+      },
+      {
+        "how_it_works_pic": "work5.png",
+        "how_it_works_name": "Move in and enjoy!"
+      }
+    ]
+  },
+  "EMI": {
+    "EMI_heading": "ATTRACTIVE EMI OPTIONS ",
+    "EMI_pic": "EMI main.png"
+  },
+  "parent_company": {
+    "parent_company_pic": "parent_company.png",
+    "parent_company_heading": "OUR PARENT COMPANY",
+    "parent_company_title": "A one stop turnkey solution with unique concepts & ideas.",
+    "parent_company_desc": "CHARGE INFRA is an established firm dealing with end-to-end construction and interior designing projects. A one-stop solution Architectural & Structural Drawings, Construction Works, and Interior Design Solutions.We are best known for delivering the highest quality services that fulfils customer’s preferences and needs. We anticipate and cater to your needs to execute a project that rightly fits your preferences.",
+    "parent_company_logo_btn": "logo_btn.svg"
+  },
+  "home_interior": {
+    "home_interior_left": {
+      "home_interior_desc": "When beginning interior design, don't forget to consider these fundamental design principles.",
+      "home_interior_btn_img": "download_btn.png",
+      "home_interior_btn_text": "Download Now"
+    },
+    "home_interior_right": {
+      "home_interior_img": "interior_img.png"
+    }
+  },
+  "partner": {
+    "partner_heading": "Trusted Partners",
+    "partner_desc": "An elite list of partners who strengthen our brand promise.",
+    "partner_img": [
+      "ap.png",
+      "bosch-1.svg",
+      "bulidtrack.png",
+      "Century ply.png",
+      "elica.png",
+      "faber-2.svg",
+      "greenply.png",
+      "hettich.svg",
+      "Layer 1.png",
+      "philips.svg",
+      "saint-gobain-logo.svg",
+      "siemens.svg"
+    ]
+  },
+  "testimonials": {
+    "testimonial_heading": "TESTIMONIALS",
+    "testimonial_left": {
+      "testimonial_left_img": "testimonial_img.png"
+    },
+    "testimonial_right": [
+      {
+        "name": "Supriya Shrivastava",
+        "designation": "Chief Branding Producer",
+        "star_img": "star.png",
+        "desc": "I recently had my kitchen renovated and I am extremely satisfied with the result. The team was professional, efficient with me to design a kitchen that was tailored to my needs and preferences. The quality of the materials used and the craftsmanship of the installation were outstanding. The end result is a beautiful, functional, and modern kitchen that has transformed the heart of my home."
+      },
+      {
+        "name": "Pavan Shetty",
+        "designation": "HR of Accenture",
+        "star_img": "star.png",
+        "desc": "Beautiful furniture and a very well-trained staff; our house is under construction, so we went to the store to get ideas and experience before designing our home.Staff were very helpful and gave quick suggestions on how to set up a space and how to play with colors around the living room and dining area etc. Now We can’t wait to setup our home 🏠 Thank you guys."
+      }
+    ]
+  },
+  "footer": {
+    "footer_logo": "logo.png",
+    "footer_menu_list": [
+      "HOME",
+      "ABOUT US",
+      "PROJECTS",
+      "SERVICES",
+      "TESTIMONIALS"
+    ],
+    "footer_address_title": "Visit",
+    "footer_address": "Ground Floor, 19th Main Rd, 4th Sector, HSR Layout, Bengaluru, Karnataka 560102",
+    "footer_contact_title": "Contact Us",
+    "footer_contact_pnone_number": "9844000873",
+    "footer_contact_email": "info@chargeinfra.in"
+  },
+  "verify": {
+    "verify_heading": "Verify Mobile",
+    "verify_desc": "We enhance the appearance and overall ambiance of a living space by adding elements of style, design, and sophistication.",
+    "verify_sub_desc": "Enter the OTP sent to your mobile number.",
+    "enter_number": "Enter your Mobile Number",
+    "send_otp_btn": "Sent OTP",
+    "verify_placeholder": "Enter OTP",
+    "verify_btn": "Verify"
+  },
+  "showing_interest": {
+    "hello_img": "hello.png",
+    "hello_heading": "Thank you for showing interest in Look & Live.We’re excited to serve you.",
+    "hello_desc": "To enhance our comprehension of your home interior requirements, we kindly request that you respond to a few inquiries. Once we receive your answers, we'll match you with a designer who is ideally suited to your needs. The questionnaire should only take approximately 3-4 minutes to complete",
+    "hello_btn": "Start Now"
+  },
+  "quize_data": {
+    "question_header": {
+      "logo": "logo.png",
+      "question_number": "01",
+      "question_exit_btn": "Exit"
+    },
+    "question_background": {
+      "img": "que_1_back.png"
+    },
+    "question": [
+      {
+        "id": 1,
+        "prompt": "Your home is..."
+      }
+    ],
+    "answer": [
+      {
+        "id": 1,
+        "img": "que_1_img1.png",
+        "name": "An Apartment"
+      },
+      {
+        "id": 2,
+        "img": "que_1_img2.png",
+        "name": "A Villa"
+      },
+      {
+        "id": 3,
+        "img": "que_1_img3.png",
+        "name": "An Independent House"
+      }
+    ],
+    "question_header2": {
+      "question_number": "02"
+    },
+    "question_background2": {
+      "img": "que_2_back.png"
+    },
+    "question2": [
+      {
+        "id": 1,
+        "prompt": "What is your home configuration?"
+      }
+    ],
+    "answer2": [
+      {
+        "id": 1,
+        "img": "que_2_img1.png",
+        "name": "Studio/1 BHK"
+      },
+      {
+        "id": 2,
+        "img": "que_2_img2.png",
+        "name": "2 BHK"
+      },
+      {
+        "id": 3,
+        "img": "que_2_img3.png",
+        "name": "3 BHK"
+      },
+      {
+        "id": 4,
+        "img": "que_2_img4.png",
+        "name": "4 BHK"
+      }
+    ],
+    "question_header3": {
+      "question_number": "03"
+    },
+    "question_background3": {
+      "img": "que_2_back.png"
+    },
+    "question3": [
+      {
+        "id": 1,
+        "prompt": "What is the size of your home? (Enter the super built-up area.)"
+      }
+    ],
+    "question_header4": {
+      "question_number": "04"
+    },
+    "question_background4": {
+      "img": "que_2_back.png"
+    },
+    "question4": [
+      {
+        "id": 4,
+        "prompt": "What are you looking for?"
+      }
+    ],
+    "answer4": [
+      {
+        "id": 1,
+        "img": "que_4_img1.png",
+        "name": "New Home Design"
+      },
+      {
+        "id": 2,
+        "img": "que_4_img2.png",
+        "name": "Renovation"
+      }
+    ],
+    "question_header5": {
+      "question_number": "05"
+    },
+    "question_background5": {
+      "img": "que_5_back.png"
+    },
+    "question5": [
+      {
+        "id": 5,
+        "prompt": "Do you plan on renting out your home?"
+      }
+    ],
+    "answer5": [
+      {
+        "id": 1,
+        "btn": "Yes"
+      },
+      {
+        "id": 2,
+        "btn": "No"
+      }
+    ],
+    "question_header6": {
+      "question_number": "06"
+    },
+    "question_background6": {
+      "img": "que_6_back.png"
+    },
+
+    "question6": [
+      {
+        "id": 6,
+        "prompt": "Which of these Look & Live packages match best with your requirements?"
+      }
+    ],
+    "answer6": [
+      {
+        "id": 1,
+        "btn": "Modular Interior",
+        "hover_desc": [
+          {
+            "name": "Modular Interior",
+            "idol_for": "Ideal For : Moving in to a new home",
+            "completed_in": "Completed In : 30-45 days",
+            "starting_price": "Starting Price : 1 Lakh Scope",
+            "scope": "Modular Kitchen including appliances with installation (chimney, hob, oven)",
+            "countertop": "Countertop",
+            "wardrobes": "Wardrobes",
+            "storages": "Storages (TV unit, shoe rack, vanity unit)",
+            "home_office": "Home Office",
+            "basic_services": "Basic services (Electrical, Plumbing, Piping, Dado, Wall paint)"
+          },
+          {
+            "name": "Full Home Interior",
+            "idol_for": "Ideal For : Turnkey home interiors,renovation, remodelling",
+            "completed_in": "60-90 days",
+            "starting_price": "10 Lakhs",
+            "scope": "Modular Kitchen, including appliances and installation Wardrobes",
+            "wardrobes": "Wardrobes",
+            "storages": "Storages (TV unit, shoe rack, vanity unit)",
+            "movable_furniture": "Movable furniture (sofa, bed, table)",
+            "decor": "Decor:(curtains, lighting, windows, upvc windows, rugs)",
+            "customized": "Customized on-site services         (flooring,false ceiling, jaali/partitions, wall panelling, bathroom remodelling)"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "btn": "Full Home Interior"
+      },
+      {
+        "id": 3,
+        "btn": "Others"
+      },
+      {
+        "id": 4,
+        "btn": "No"
+      }
+    ],
+    "question_header7": {
+      "question_number": "07"
+    },
+    "question_background7": {
+      "img": "que_7_back.png"
+    },
+
+    "question7": [
+      {
+        "id": 7,
+        "prompt": "What price range would you choose for your home interiors?"
+      }
+    ],
+    "answer7": [
+      {
+        "id": 1,
+        "btn": "3 - 5 Lacs "
+      },
+      {
+        "id": 2,
+        "btn": "5 - 10 Lacs "
+      },
+      {
+        "id": 3,
+        "btn": "10 - 15 Lacs "
+      },
+      {
+        "id": 4,
+        "btn": "15 - 20 Lacs "
+      },
+      {
+        "id": 5,
+        "btn": ">20 Lacs "
+      }
+    ],
+    "question_header8": {
+      "question_number": "08"
+    },
+    "question_background8": {
+      "img": "que_8_back.png"
+    },
+
+    "question8": [
+      {
+        "id": 8,
+        "prompt": "When would you like us to start the interiors of your home?"
+      }
+    ],
+    "answer8": [
+      {
+        "id": 1,
+        "btn": "Immediately (less than 1 month)"
+      },
+      {
+        "id": 2,
+        "btn": "1 - 3 months"
+      },
+      {
+        "id": 3,
+        "btn": "4 - 6 months"
+      },
+      {
+        "id": 4,
+        "btn": "More than 6 months"
+      }
+    ],
+    "question_header9": {
+      "question_number": "09"
+    },
+    "question_background9": {
+      "img": "que_9_back.png"
+    },
+    "question9": [
+      {
+        "id": 9,
+        "prompt": "Choose the top 3 bedroom looks you like the most."
+      }
+    ],
+    "answer9": [
+      {
+        "id": 1,
+        "img": "que_9_img1.png",
+        "name": "Art Deco"
+      },
+      {
+        "id": 2,
+        "img": "que_9_img2.png",
+        "name": "Modern Contemprory"
+      },
+      {
+        "id": 3,
+        "img": "que_9_img3.png",
+        "name": "Minimalistic"
+      },
+      {
+        "id": 4,
+        "img": "que_9_img4.png",
+        "name": "Luxury"
+      },
+      {
+        "id": 5,
+        "img": "que_9_img5.png",
+        "name": "Traditional"
+      },
+      {
+        "id": 6,
+        "img": "que_9_img6.png",
+        "name": "Other"
+      }
+    ],
+    "question_header10": {
+      "question_number": "10"
+    },
+    "question_background10": {
+      "img": "que_10_back.png"
+    },
+
+    "question10": [
+      {
+        "id": 10,
+        "prompt": "Choose the top 3 kitchen looks you like the most."
+      }
+    ],
+    "answer10": [
+      {
+        "id": 1,
+        "img": "que_10_img1.png",
+        "name": "Art Deco"
+      },
+      {
+        "id": 2,
+        "img": "que_10_img2.png",
+        "name": "Modern Contemprory"
+      },
+      {
+        "id": 3,
+        "img": "que_10_img3.png",
+        "name": "Minimalistic"
+      },
+      {
+        "id": 4,
+        "img": "que_10_img4.png",
+        "name": "Luxury"
+      },
+      {
+        "id": 5,
+        "img": "que_10_img5.png",
+        "name": "Traditional"
+      },
+      {
+        "id": 6,
+        "img": "que_10_img6.png",
+        "name": "Other"
+      }
+    ],
+    "question_header11": {
+      "question_number": "11"
+    },
+    "question_background11": {
+      "img": "que_11_back.png"
+    },
+
+    "question11": [
+      {
+        "id": 11,
+        "prompt": "Choose the top 3 dinning room looks you like the most."
+      }
+    ],
+    "answer11": [
+      {
+        "id": 1,
+        "img": "que_11_img1.png",
+        "name": "Art Deco"
+      },
+      {
+        "id": 2,
+        "img": "que_11_img2.png",
+        "name": "Modern Contemprory"
+      },
+      {
+        "id": 3,
+        "img": "que_11_img3.png",
+        "name": "Minimalistic"
+      },
+      {
+        "id": 4,
+        "img": "que_11_img4.png",
+        "name": "Industry"
+      },
+      {
+        "id": 5,
+        "img": "que_11_img5.png",
+        "name": "Luxury"
+      },
+      {
+        "id": 6,
+        "img": "que_11_img6.png",
+        "name": "Traditional"
+      }
+    ],
+    "question_header12": {
+      "question_number": "12"
+    },
+    "question_background12": {
+      "img": "que_12_back.png"
+    },
+
+    "question12": [
+      {
+        "id": 12,
+        "prompt": "Choose the top 3 living room looks you like the most."
+      }
+    ],
+    "answer12": [
+      {
+        "id": 1,
+        "img": "que_12_img1.png",
+        "name": "Art Deco"
+      },
+      {
+        "id": 2,
+        "img": "que_12_img2.png",
+        "name": "Modern Contemprory"
+      },
+      {
+        "id": 3,
+        "img": "que_12_img3.png",
+        "name": "Minimalistic"
+      },
+      {
+        "id": 4,
+        "img": "que_12_img4.png",
+        "name": "Industry"
+      },
+      {
+        "id": 5,
+        "img": "que_12_img5.png",
+        "name": "Luxury"
+      },
+      {
+        "id": 6,
+        "img": "que_12_img6.png",
+        "name": "Traditional"
+      }
+    ],
+    "question_header13": {
+      "question_number": "13"
+    },
+
+    "question_background13": {
+      "img": "que_13_back.png"
+    },
+
+    "question13": [
+      {
+        "id": 13,
+        "prompt": "Customer Inputs"
+      }
+    ],
+
+    "terms_condition": {
+      "terms_condition_background": {
+        "img": "term_condition_back.png"
+      },
+
+      "terms": "We adhere to our privacy policy while collecting and processing your information. In order to customise content and provide personalised advertising and marketing solutions via emails and calls, we may share your information and data with our affiliates and other trusted business partners. Kindly click on “I Agree” to signify your acceptance of this use of your data.",
+      "agree": "I Agree.",
+      "disagree": "I do not agree"
+    }
+  },
+  "thank_you": {
+    "thank_you_back": "thank_u_back.png",
+    "thank_you_img": "thanks_img_main_page.png",
+    "thank_you_desc": "Thank you for all your inputs. Our team will call you back shortly.",
+    "thank_you_btn":"Done"
+}
+}

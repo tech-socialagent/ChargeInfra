@@ -1,0 +1,90 @@
+.ourProject_card_main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.ourProject_card{
+    margin: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+    position: relative;
+}
+.ouProject_card_img{
+    height: 550px;
+    width: 300px;
+}
+.ouProject_card_name{
+line-height: 1px;
+font-family: "Brandon_med";
+position: absolute;
+bottom: 10%;
+left:10%;
+font-size: 20px;
+text-align: center;
+color: white;
+background-color: rgba(0,0,0,0.2);
+}
+.ourProject_card_btn{
+font-size: 60px;
+color: rgba(205, 175, 76, 1);
+background: none;
+border: none;
+position: absolute;
+left: 10%;
+bottom: 2%;
+}
+
+.ourProject_card_hover:hover +.card_hover_name{
+    display: none;
+}
+.ourProject_card_hover{
+    display: none;
+}
+/* don't remove it for after animation */
+/* .ourProject_card_hover:hover{
+    display:block;
+}
+.ourProject_card:hover + .ourProject_card_hover{
+    display: block;
+} */
+.ourProject_card_hover{
+    position:absolute;
+    margin-top: -550px;
+    margin-left: 30px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.card_hover_name{
+    font-size: 32px;
+    text-align: left;
+    font-family: "Brandon_med";
+color: white;
+}
+.ourProject_card_hover_desc{
+    width: 250px;
+    font-size: 21px;
+    font-family: "Brandon_reg";
+
+}
+
+.ourProject_card_hover_btn{
+    font-family: "Brandon_med";
+    border: 2px solid;
+    border-image: linear-gradient(to right, white, black) 1;
+    background: none;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    padding: 1px;
+}
+@media screen and (max-width:480px) {
+    .ourProject_card{
+        margin: 10px;
+    }    
+    .ourProject_card_btn{
+        font-size: 100px;
+        bottom: 0%;
+        }       
+}

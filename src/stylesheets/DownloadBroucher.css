@@ -1,0 +1,115 @@
+.download-pop-up-main{
+    position: fixed;
+    top:15%;
+    left: 40%;
+    width:30%;
+    height: 75vh;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 7px 3px gray;
+    padding: 20px;
+    z-index: 1111;
+}
+.pop-up-heading{
+    display: flex;
+    justify-content: space-around;
+}
+.pop-up-heading h1{
+    font-family: "Brandon_bld";
+font-size: 32px;
+text-align: left;
+line-height: 1px;
+}
+.pop-up-cancel{
+    background: none;
+    border:none;
+    font-size: 30px;
+    cursor: pointer;
+}
+.pop-up-form{
+    display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.pop-up-form input{
+    width: 70%;
+    height: 35px;
+    border-radius: 5px;
+    padding-left: 20px;
+    border: 1px solid gray;
+    margin-top: 10px;
+}
+.download_broucher_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-image: linear-gradient(to right, black, white) 1;
+    background:none;
+    margin-top: 10px;
+    height: 50px;
+    padding: 5px;
+}
+.download_broucher_btn a{
+    font-family: "Brandon_med";
+text-decoration: none;
+font-size: 16px;
+text-align: center;
+color: black;
+
+}
+.pop-up-privacy-policy{
+font-size: 20px;
+text-align: center;
+font-family: "Brandon_reg";
+margin-left: 30px;
+}
+.start_quize{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-image: linear-gradient(to right, black, white) 1;
+    background:none;
+    margin-top: 10px;
+    height: 50px;
+    padding: 5px;
+
+}
+@media screen and (max-width:900px) {
+    .download-pop-up-main{
+        top:5%;
+    }
+    .download-pop-up-main{
+        width: 50%;
+        left: 30%;
+        height:auto;
+    }
+    .download_broucher_btn{
+        margin-top: 5px;
+        height: 40px;
+        padding: 5px;
+    }
+    .download_broucher_btn a{
+    font-size: 14px;
+    }
+    .pop-up-privacy-policy{
+    font-size: 17px;
+    margin-left: 20px;
+    margin-bottom: 0%;
+    }
+    .start_quize{
+        margin-top: 5px;
+        height: 40px;
+        padding: 5px;
+    
+    }
+    
+}
+@media screen and (max-width:480px) {
+    .download-pop-up-main{
+        width:70%;
+        left: 10%;
+        height: auto;
+        margin-top: 15%;
+
+    }
+}

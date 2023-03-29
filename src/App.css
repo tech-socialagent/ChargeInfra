@@ -1,0 +1,19 @@
+
+@font-face {
+  font-family:"Brandon_bld";
+  src: url("../src/font/Brandon-Grotesque-Font//brand_ssv/Brandon_bld.otf");
+}
+@font-face {
+  font-family:"Brandon_med";
+  src: url('../src/font/Brandon-Grotesque-Font/brand_ssv/Brandon_med.otf');
+}
+@font-face {
+  font-family:"Brandon_reg";
+  src: url('../src/font/Brandon-Grotesque-Font/brand_ssv/Brandon_reg.otf');
+}
+
+.App{
+  font-family: "Brandon-Grotesque-light";
+
+}
+

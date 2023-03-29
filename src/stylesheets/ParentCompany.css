@@ -1,0 +1,79 @@
+.parent_company_main{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color: #222831;
+    padding: 10px 60px 5px 60px;
+
+}
+.parent_company_left{
+    flex: 50%;
+}
+.parent_company_left img{
+height: 350px;
+}
+.parent_company_right{
+    flex: 50%;
+    text-align: left;
+    margin-bottom: 40px;
+
+}
+.parent_company_heading{
+font-size: 24px;
+color: white;
+font-family: "Brandon_med";
+font-weight: 400;
+}
+.parent_company_title{
+    font-family: "Brandon_reg";
+    font-size: 48px;
+    font-weight: 600;
+    color: #CDAF4C;
+    line-height:50px;
+    margin:-2%;
+
+}
+.parent_company_desc{
+    font-size: 23px;
+    color: white;
+    font-family: "Brandon_reg";
+    padding-top: 10px;
+}
+.parent_company_know_more{
+    font-size: 31px;
+    color: white;
+    font-family: "Brandon_med";
+    margin-top: -1%;
+}
+.parent_company_logo_btn{
+    background: none;
+    border-image: linear-gradient(to right, #CDAF4C, white) 1;
+    margin-top: -2%;
+
+}
+.parent_company_logo_btn img{
+    height: 40px;
+    width: 200px;
+    margin: 2px;
+}
+@media screen and (max-width:900px) {
+    .parent_company_main{
+    flex-direction: column;
+    padding: 5px 30px 5px 30px;
+    }
+    .parent_company_left img{
+        height: 60vh;
+        width:100%
+    }
+    .parent_company_title{
+        font-size: 40px;    
+    }
+    
+}
+@media screen and(max-width:480px) {
+    .parent_company_left img{
+        height: 50vh;
+        width:100%;
+    }
+
+}

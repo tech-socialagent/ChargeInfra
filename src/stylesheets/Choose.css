@@ -1,0 +1,214 @@
+.choose_back {
+    position: relative;
+    overflow: hidden;
+}
+
+.choose_back::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-image: url('../assets/chhose_us/back_img.png');
+    opacity: 0.1;
+    background-size: cover;
+}
+
+.choose_main {
+    height: 100%;
+    padding: 10px 60px 5px 60px;
+    background-color: #222831;
+    padding-top: 1px;
+    padding-bottom: 40px;
+    z-index: 1111;
+}
+
+.choose_main::before {
+    transform: rotate(90deg);
+}
+
+.choose_section_heading {
+    font-size: 48px;
+    padding-left: 60px;
+    color: white;
+    font-family: "Brandon_reg";
+    font-weight: 600;
+}
+
+.animinated-line {
+    height: 2px;
+    width: 200px;
+    background-image: linear-gradient(to right, #CDAF4C, rgb(0, 0, 0));
+    margin-top: -35px;
+    margin: -35px 0px 2% 15%;
+    transform-origin: left;
+    transform: scaleX(0);
+    animation: animate 3s infinite alternate-reverse;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateX(0) scaleX(0);
+        transform-origin: left;
+    }
+
+    45% {
+        transform: translateX(0) scaleX(1);
+        transform-origin: left;
+    }
+
+    50% {
+        transform: translateX(0) scaleX(1);
+        transform-origin: right;
+    }
+
+    100% {
+        transform: translateX(0) scaleX(0);
+        transform-origin: right;
+    }
+}
+
+.choose_icon_section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.choose_us_section {
+    margin-bottom: 30px;
+}
+
+.about_us_second {
+    padding-left: 60px;
+}
+
+.choose_us_section,
+.choose_us_section2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.choose_us_section img,
+.choose_us_section2 img {
+    height: 60px;
+    width: 60px;
+}
+
+.choose_us_desc {
+    color: white;
+    margin-left: 20px;
+    margin-top: -10px;
+    font-size: 18px;
+    line-height: 10px;
+    font-family: "Brandon_reg";
+}
+
+.choose_warranty_section h1 {
+    font-size: 48px;
+    color: white;
+    font-family: "Brandon_reg";
+    font-weight: 600;
+}
+
+.warranty_list {
+    margin-top: -6%;
+}
+
+.warranty_list li {
+    font-size: 24px;
+    color: white;
+    line-height: 42px;
+    font-family: "Brandon_reg";
+}
+
+.choose_technology_section h1 {
+    font-size: 48px;
+    color: white;
+    font-family: "Brandon_reg";
+    margin-top: 0%;
+}
+
+.technology_list {
+    margin-top: -6%;
+}
+
+.technology_list li {
+    font-size: 24px;
+    font-weight: 420;
+    line-height: 42px;
+    color: white;
+    font-family: "Brandon_reg";
+
+}
+@media screen and (max-width: 900px) {
+    .choose_main {
+        padding: 5px 30px 5px 30px;
+
+    }
+
+.about_us_second {
+        padding-left: 30px;
+    }
+
+    .choose_warranty_section h1 {
+        font-size: 30px;
+    }
+
+    .choose_us_section2 {
+        margin-bottom: 0%;
+    }
+
+    .warranty_list {
+        margin-top:-2%;
+    }
+
+    .warranty_list li {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .choose_technology_section h1 {
+        font-size: 30px;
+        margin-top: 0%;
+    }
+
+    .technology_list {
+        margin-top: -2%;
+    }
+
+    .technology_list li {
+        font-size: 22px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .choose_section_heading {
+        font-size: 40px;
+        padding-left: 30px;
+        padding-bottom: 10px;
+    }
+
+    .animinated-line {
+        margin: -35px 0px 10% 15%;
+    }
+
+    .choose_icon_section {
+        flex-direction: column;
+        padding-left: 30px;
+    }
+    .choose_us_section2 {
+        margin-bottom: 7%;
+    }
+
+    .warranty_list {
+        margin-top: -15%;
+    }
+
+    .warranty_list li {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .technology_list {
+        margin-top: -15%;
+    }
+}

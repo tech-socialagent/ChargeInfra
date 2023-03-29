@@ -1,0 +1,100 @@
+.home-main{
+    height: 130vh;
+    width: 100%;
+}
+.background-overlay{
+    z-index: 11;
+    background-image: linear-gradient(rgba(0, 0, 0,0.6), rgba(0,0,0,0.3));
+    width: 100%;
+    height: 130vh;
+    position: absolute;
+    left: 0%;
+}
+.background-slider img{
+    width: 100%;
+    height:130vh;
+}
+.slider-text{
+    position: absolute;
+    top:35%;
+    left: 10%;
+    z-index:99;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.home-sub-tagline{
+font-size: 18px;
+color: #CDAF4C;
+line-height: 1px;
+font-family: "Brandon_reg";
+font-weight: 900;
+}
+.home-tagline{
+font-size:70px;
+color: white;
+line-height: 1px;
+font-family: "Brandon_med";
+font-weight: 550;
+margin-top: 30px;
+}
+.home-description{
+font-size: 24px;
+font-weight: 550;
+width: 75%;
+color: white;
+font-family: "Brandon_reg";
+}
+.book-appointment-btn{
+border: 2px solid;
+border-image: linear-gradient(to right, white, gray) 1;
+background: none;
+font-size: 24px;
+font-weight: 420;
+padding: 5px;
+color: white;
+font-family: "Brandon_reg";
+}
+.book-appointment-btn:hover{
+    background-color: #CDAF4C;
+    border-image: linear-gradient(to right, white, black) 1;
+    padding-left: 10px;
+    transition: ease-in 0.3s;
+}
+
+    @media screen and (max-width: 900px) {
+        .slider-text{
+            top:25%;
+            padding: 5px 10px 5px 10px;
+    
+        }
+        .home-tagline{
+            font-size:55px;
+            color: white;
+            line-height: 55px;
+            }
+            
+        .home-description{
+                margin-top: -20px;
+            }
+        }
+    
+        /* @media screen and (max-width: 480px) {
+            .slider-text{
+                top:25%;
+                padding: 5px 10px 5px 10px;
+        
+            }
+            .home-tagline{
+                font-size:55px;
+                color: white;
+                line-height: 55px;
+                }
+                
+            .home-description{
+                    margin-top: -20px;
+                }
+            }
+         */

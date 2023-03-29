@@ -1,0 +1,96 @@
+.verify_main {
+    background-image: url('../assets/verify/backImg.png');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.verify_text {
+ display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+ text-align: center; 
+}
+
+.verify_text_heading {
+    font-size: 64px;
+    font-weight: 450;
+    color: white;
+    font-family: "Brandon_med";
+    line-height: 1px;
+}
+
+.verify_text_desc {
+    font-family: "Brandon_reg";
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+}
+
+.enter_mobile_number {
+    font-family: "Brandon_reg";
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    line-height: 1px;
+}
+
+.number_field {
+    height: 30px;
+    width: 300px;
+    border-radius: 2px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: none;
+    padding-left: 10px;
+    font-family: "Brandon_reg";
+    color: white;
+    line-height: 1px;
+}
+
+.number_field:focus {
+    outline: none;
+}
+
+.verify_text_sub_desc {
+    font-family: "Brandon_reg";
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    line-height: 2px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.verify_btn {
+    font-family: "Brandon_reg";
+    border: 1.5px solid;
+    border-image: linear-gradient(to right, white, black) 1;
+    background: none;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    padding: 2px;
+    width: 200px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.resend_otp {
+    font-family: "Brandon_reg";
+    font-size: 16px;
+    font-weight: 420;
+    text-align: center;
+    color: #CDAF4C;
+}

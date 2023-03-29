@@ -1,0 +1,47 @@
+#showing_interest_main{
+    background-image: url('../assets/showing interest/backImg.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.showing_interest_text_main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.4);
+    width: 70%;
+    padding: 20px;
+}
+
+.showing_interest_down{
+    text-align: center;
+    color: white;
+}
+.showing_interest_heading{
+    font-family:"Brandon_med";
+font-size: 24px;
+font-weight: 400;
+}
+.showing_interest_desc{
+    font-family:"Brandon_reg";
+font-size: 20px;
+font-weight: 300;
+}
+.showing_interest_btn{
+    font-family:"Brandon_reg";
+    border: 1.5px solid;
+    border-image: linear-gradient(to right, white, gray) 1;
+    background: none;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    padding: 2px;
+    width: 200px;
+    margin-top: 20px;
+       
+}

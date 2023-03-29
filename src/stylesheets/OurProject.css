@@ -1,0 +1,17 @@
+.our_project_main {
+    padding: 10px 60px 5px 60px;
+    background: rgba(34, 40, 49, 1);
+    height: 100%;
+}
+.our_project_main h1{
+    font-family:"Brandon_reg";
+    font-weight: 600;
+    font-size: 30px;
+    text-align:right;
+    color: white;
+}
+@media screen and (max-width:480px) {
+    .our_project_main {
+        padding: 5px 30px 5px 30px;
+    }    
+}

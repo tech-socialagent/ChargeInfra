@@ -1,0 +1,170 @@
+.EMI_back{
+    position: relative;
+    overflow: hidden;
+}
+.EMI_back::before{
+    content: "";
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-image: url('../assets/EMI/emi_back');
+    background-repeat: repeat-y;
+    transform: rotate(180deg);
+    background-size:100%;
+}
+.EMI_main {
+    background: #222831;
+    position: relative;
+    padding: 10px 60px 50px 60px;
+    height: 100%;
+    background-size:contain;
+background-repeat: repeat-x;
+}
+
+.EMI_heading {
+    font-size: 24px;
+    text-align: left;
+    color: white;
+    word-spacing: 2px;
+    font-family: "Brandon_reg";
+}
+.EMI_detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.EMI_left_img_main {
+    position: relative;
+}
+.EMI_img {
+    height:470px;
+    width:600px;
+    position: absolute;
+    z-index: 11;
+    top: 0%;
+    left: 0%;
+}
+.EMI_left {
+    flex: 50%;
+}
+.EMI_left_text_main{
+    position: relative;
+    padding: 0px 0px 10px 30px;
+    text-align: left;
+    z-index: 11;
+}
+.EMI_left_text_main h1 {
+    color: #CDAF4C;
+    font-size: 42px;
+    font-family: "Brandon_bld";
+}
+.EMI_left_dec {
+    top: 0%;
+    left:0%;
+    font-size: 20px;
+    color: white;
+    z-index: 11;
+    font-family: "Brandon_reg";
+}
+.EMI_term_condition {
+    font-size: 16px;
+    color: white;
+    font-family: "Brandon_reg";
+}
+.EMI_yellow_text {
+    color: #CDAF4C;
+}
+
+.EMI_right {
+    flex: 50%;
+    padding-left: 150px;
+}
+
+.EMI_title {
+    font-family: "Brandon_reg";
+    font-size: 40px;
+    font-weight: 450;
+    text-align: left;
+    color: white;
+    line-height: 50px;
+}
+
+#free_text {
+    color: #CDAF4C;
+}
+
+.book_now_btn {
+    content:"Book now";
+    height: 48px;
+    border: 2px solid;
+    border-image: linear-gradient(to right, white, black) 1;
+    background: none;
+    font-size: 24px;
+    font-weight: 420;
+    text-align: center;
+    color: white;
+    font-family: "Brandon_med";
+    padding: 3px 40px 3px 40px;
+    position: relative;
+    z-index: 100;
+}
+.book_now_btn:hover{
+    content: "Book Free Consultation";
+    background-color: #CDAF4C;
+    border-image: linear-gradient(to right, white, black) 1;
+    transition: ease-in 0.3s;
+    padding: 3px 45px 3px 45px;
+}
+
+@media screen and (max-width:900px) {
+    .EMI_main{
+        padding: 5px 30px 5px 30px;
+    }
+    .EMI_detail{
+        flex-direction: column;
+    }
+    .EMI_img {
+        height:70vh;
+        width: 100%;
+    }
+
+    .EMI_left_text_main h1 {
+        font-size: 40px;
+        margin-top: 0%;
+    }
+    .EMI_left_dec {
+        font-size: 20px;
+        margin-top: -2%;
+    }
+    .EMI_term_condition {
+        font-size: 16px;
+    }
+    .EMI_right {
+        padding-left:0px;
+    }
+
+    .EMI_title {
+        font-size: 30px;
+    }
+    .book_now_btn {
+        height: 45px;
+        font-size: 22px;
+        padding: 3px 30px 3px 30px;
+    }
+    
+}
+@media screen and (max-width:480px) {
+    .EMI_left_text_main h1 {
+        font-size: 30px;
+    }
+    .EMI_left_dec {
+        font-size: 18px;
+        margin-top: -5%;
+    }
+    .EMI_term_condition {
+        font-size: 14px;
+    }
+
+}
