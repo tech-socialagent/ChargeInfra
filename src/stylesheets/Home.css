@@ -1,87 +1,98 @@
-.home-main{
-    height: 130vh;
+.home-main {
+    height: 90vh;
     width: 100%;
 }
-.background-overlay{
+
+.background-overlay {
     z-index: 11;
-    background-image: linear-gradient(rgba(0, 0, 0,0.6), rgba(0,0,0,0.3));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
     width: 100%;
-    height: 130vh;
+    height: 90vh;
     position: absolute;
     left: 0%;
 }
-.background-slider img{
+
+.background-slider img {
     width: 100%;
-    height:130vh;
+    height: 90vh;
+    object-fit: cover;
+    object-position: center center;
 }
-.slider-text{
+
+.slider-text {
     position: absolute;
-    top:35%;
-    left: 10%;
-    z-index:99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-.home-sub-tagline{
-font-size: 18px;
-color: #CDAF4C;
-line-height: 1px;
-font-family: "Brandon_reg";
-font-weight: 900;
-}
-.home-tagline{
-font-size:70px;
-color: white;
-line-height: 1px;
-font-family: "Brandon_med";
-font-weight: 550;
-margin-top: 30px;
-}
-.home-description{
-font-size: 24px;
-font-weight: 550;
-width: 75%;
-color: white;
-font-family: "Brandon_reg";
-}
-.book-appointment-btn{
-border: 2px solid;
-border-image: linear-gradient(to right, white, gray) 1;
-background: none;
-font-size: 24px;
-font-weight: 420;
-padding: 5px;
-color: white;
-font-family: "Brandon_reg";
-}
-.book-appointment-btn:hover{
-    background-color: #CDAF4C;
-    border-image: linear-gradient(to right, white, black) 1;
-    padding-left: 10px;
-    transition: ease-in 0.3s;
+
+.home-sub-tagline {
+    font-size: 18px;
+    color: #CDAF4C;
+    font-family: "Brandon_reg";
+    font-weight: 900;
 }
 
-    @media screen and (max-width: 900px) {
-        .slider-text{
-            top:25%;
-            padding: 5px 10px 5px 10px;
-    
-        }
-        .home-tagline{
-            font-size:55px;
-            color: white;
-            line-height: 55px;
-            }
-            
-        .home-description{
-                margin-top: -20px;
-            }
-        }
-    
-        /* @media screen and (max-width: 480px) {
+.home-tagline {
+    font-size: 70px;
+    color: white;
+    font-family: "Brandon_med";
+    font-weight: 550;
+    margin-top: 30px;
+}
+
+.home-description {
+    font-size: 24px;
+    font-weight: 550;
+    width: 75%;
+    color: white;
+    font-family: "Brandon_reg";
+}
+
+.book-appointment-btn {
+    border: 2px solid;
+    border-image: linear-gradient(to right, white, gray) 1;
+    background: none;
+    font-size: 24px;
+    font-weight: 420;
+    padding: 5px;
+    color: white;
+    font-family: "Brandon_reg";
+}
+
+.book-appointment-btn:hover {
+    background-color: #CDAF4C;
+    border-image: linear-gradient(to right, white, black) 1;
+    transition: ease-in 0.3s;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+    .slider-text {
+        top: 25%;
+        padding: 5px 10px 5px 10px;
+
+    }
+
+    .home-tagline {
+        font-size: 55px;
+        color: white;
+        line-height: 55px;
+    }
+
+    .home-description {
+        margin-top: -20px;
+    }
+}
+
+/* @media screen and (max-width: 480px) {
             .slider-text{
                 top:25%;
                 padding: 5px 10px 5px 10px;

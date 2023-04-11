@@ -1,54 +1,59 @@
-.testimonials_card{
+.testimonials_card {
     display: flex;
     justify-content: center;
 }
-.testimonial_left{
-    flex:35%
+
+.testimonial_left {
+    flex: 35%
 }
-.testimonial_right{
-    flex:65%;
+
+.testimonial_right {
+    flex: 65%;
 
 }
-.testimonial_heading{
+
+.testimonial_heading {
     font-family: "Brandon_reg";
     text-align: right;
-font-size: 24px;
-color: white;
+    font-size: 24px;
+    color: white;
 }
-.testimonial_name{
-    font-family:"Brandon_reg";
+
+.testimonial_name {
+    font-family: "Brandon_reg";
     font-size: 67px;
     font-weight: 700;
-line-height: 30px;
-color: white;
-    text-align: left;  
+    color: white;
+    text-align: left;
 }
-.testimonial_desig{
-    font-family:"Brandon_reg";
+
+.testimonial_desig {
+    font-family: "Brandon_reg";
     font-size: 16px;
-    text-align: left;   
+    text-align: left;
     color: #CDAF4C;
-    margin-top: -2%;
 }
-.testimonial_desc{
-    font-family:"Brandon_reg";
+
+.testimonial_desc {
+    font-family: "Brandon_reg";
     font-size: 20px;
     font-weight: 100;
-    text-align: left;   
+    text-align: left;
     color: white;
 }
 
 @media screen and (max-width:900px) {
-    .testimonial_left{
+    .testimonial_left {
         display: none;
     }
-    .testimonial_name{
-        font-family:"Brandon_reg";
+
+    .testimonial_name {
+        font-family: "Brandon_reg";
         font-size: 67px;
         font-weight: 700;
-    line-height: 70px;
-    color: white;
-        text-align: left;  
+        line-height: 70px;
+        color: white;
+        text-align: left;
     }
-    
+
 }

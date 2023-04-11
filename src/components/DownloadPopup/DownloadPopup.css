@@ -1,0 +1,68 @@
+.downloadWrap {
+    width: 300px;
+    height: max-content;
+    position: fixed;
+    top: 30%;
+    left: 35%;
+    background: #fff;
+    padding: 3%;
+    padding-top: 1%;
+    box-shadow: 4px 4px 20px;
+    z-index: 888;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.close{
+    font-size: 20px;
+}
+.Downloadform {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.Downloadform input {
+    margin-top: 10px;
+    padding: 2%;
+    border: 1px #00000065 solid;
+    border-radius: 6px;
+}
+
+.Downloadform input:focus {
+    /* border: 1px #00000065 solid; */
+    outline: none;
+}
+
+.downloadBtn {
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.DownloadPolicy{
+    font-size: 14px;
+    text-align: center;
+}
+
+.QuizeWrap{
+    text-align: center;
+}
+.thanksText{
+    margin-top: 30%;
+    padding: 0 10%;
+}
+.downloadAgain{
+   margin-top: 4%;
+   padding: 0 10%;
+}
+.msg{
+    margin-top: 4%;
+}
+.quizBtn{
+    margin-top: 6%;
+}

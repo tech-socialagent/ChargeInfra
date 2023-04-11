@@ -1,22 +1,29 @@
-.services_section_main{
+.services_section_main p{
+    margin: 0;
+}
+.services_section_main {
     padding: 10px 60px 5px 60px;
     height: 100%;
 }
-.services_heading{
-font-size: 48px;
-line-height: 1px;
-font-family: "Brandon_reg";
-font-weight: 600;
+
+.services_heading {
+    font-size: 48px;
+    font-family: "Brandon_reg";
+    font-weight: 600;
+    margin: 0;
 }
-.services_desc{
-font-size: 24px;
-font-family: "Brandon_reg";
+
+.services_desc {
+    font-size: 24px;
+    font-family: "Brandon_reg";
 }
+
 @media screen and (max-width:480px) {
-    .services_section_main{
+    .services_section_main {
         padding: 5px 30px 5px 30px;
     }
-    .services_heading{
+
+    .services_heading {
         font-size: 40px;
-    }              
+    }
 }

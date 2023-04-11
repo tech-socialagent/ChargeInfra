@@ -3,10 +3,13 @@
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 120vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    top: 10%;
+    left: 0;
+    z-index: 999;
 }
 .showing_interest_text_main{
     display: flex;

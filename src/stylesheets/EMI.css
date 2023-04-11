@@ -1,25 +1,28 @@
-.EMI_back{
+.EMI_back {
     position: relative;
     overflow: hidden;
 }
-.EMI_back::before{
+
+.EMI_back::before {
     content: "";
-    position:absolute;
+    position: absolute;
     width: 100%;
     height: 100%;
     z-index: 1;
     background-image: url('../assets/EMI/emi_back');
     background-repeat: repeat-y;
     transform: rotate(180deg);
-    background-size:100%;
+    background-size: 100%;
 }
+
 .EMI_main {
     background: #222831;
     position: relative;
     padding: 10px 60px 50px 60px;
     height: 100%;
-    background-size:contain;
-background-repeat: repeat-x;
+    background-size: contain;
+    background-repeat: repeat-x;
+    padding-top: 3%;
 }
 
 .EMI_heading {
@@ -28,7 +31,9 @@ background-repeat: repeat-x;
     color: white;
     word-spacing: 2px;
     font-family: "Brandon_reg";
+    margin: 3%;
 }
+
 .EMI_detail {
     display: flex;
     justify-content: center;
@@ -38,48 +43,68 @@ background-repeat: repeat-x;
 .EMI_left_img_main {
     position: relative;
 }
+
 .EMI_img {
-    height:470px;
-    width:600px;
+    height: 470px;
+    width: 100%;
     position: absolute;
     z-index: 11;
     top: 0%;
     left: 0%;
+    padding: 4px;
+    background:
+        linear-gradient(to right, #CDAF4C 10px, transparent 10px) 0 0,
+        linear-gradient(to right, #CDAF4C  10px, transparent 10px) 0 100%,
+        linear-gradient(to left, #CDAF4C  10px, transparent 10px) 100% 0,
+        linear-gradient(to left, #CDAF4C  10px, transparent 10px) 100% 100%,
+        linear-gradient(to bottom, #CDAF4C  10px, transparent 10px) 0 0,
+        linear-gradient(to bottom, #CDAF4C  10px, transparent 10px) 100% 0,
+        linear-gradient(to top, #CDAF4C  10px, transparent 10px) 0 100%,
+        linear-gradient(to top, #CDAF4C  10px, transparent 10px) 100% 100%;
+
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
 }
+
 .EMI_left {
-    flex: 50%;
+    width: 50%;
 }
-.EMI_left_text_main{
+
+.EMI_left_text_main {
     position: relative;
-    padding: 0px 0px 10px 30px;
+    padding: 8%;
     text-align: left;
     z-index: 11;
 }
+
 .EMI_left_text_main h1 {
     color: #CDAF4C;
     font-size: 42px;
     font-family: "Brandon_bld";
 }
+
 .EMI_left_dec {
     top: 0%;
-    left:0%;
+    left: 0%;
     font-size: 20px;
     color: white;
     z-index: 11;
     font-family: "Brandon_reg";
 }
+
 .EMI_term_condition {
     font-size: 16px;
     color: white;
     font-family: "Brandon_reg";
 }
+
 .EMI_yellow_text {
     color: #CDAF4C;
 }
 
 .EMI_right {
-    flex: 50%;
-    padding-left: 150px;
+    width: 50%;
+    margin-left: 5%;
 }
 
 .EMI_title {
@@ -88,7 +113,6 @@ background-repeat: repeat-x;
     font-weight: 450;
     text-align: left;
     color: white;
-    line-height: 50px;
 }
 
 #free_text {
@@ -96,7 +120,7 @@ background-repeat: repeat-x;
 }
 
 .book_now_btn {
-    content:"Book now";
+    content: "Book now";
     height: 48px;
     border: 2px solid;
     border-image: linear-gradient(to right, white, black) 1;
@@ -110,7 +134,8 @@ background-repeat: repeat-x;
     position: relative;
     z-index: 100;
 }
-.book_now_btn:hover{
+
+.book_now_btn:hover {
     content: "Book Free Consultation";
     background-color: #CDAF4C;
     border-image: linear-gradient(to right, white, black) 1;
@@ -119,14 +144,16 @@ background-repeat: repeat-x;
 }
 
 @media screen and (max-width:900px) {
-    .EMI_main{
+    .EMI_main {
         padding: 5px 30px 5px 30px;
     }
-    .EMI_detail{
+
+    .EMI_detail {
         flex-direction: column;
     }
+
     .EMI_img {
-        height:70vh;
+        height: 70vh;
         width: 100%;
     }
 
@@ -134,35 +161,42 @@ background-repeat: repeat-x;
         font-size: 40px;
         margin-top: 0%;
     }
+
     .EMI_left_dec {
         font-size: 20px;
-        margin-top: -2%;
+        /* margin-top: -2%; */
     }
+
     .EMI_term_condition {
         font-size: 16px;
     }
+
     .EMI_right {
-        padding-left:0px;
+        padding-left: 0px;
     }
 
     .EMI_title {
         font-size: 30px;
     }
+
     .book_now_btn {
         height: 45px;
         font-size: 22px;
         padding: 3px 30px 3px 30px;
     }
-    
+
 }
+
 @media screen and (max-width:480px) {
     .EMI_left_text_main h1 {
         font-size: 30px;
     }
+
     .EMI_left_dec {
         font-size: 18px;
         margin-top: -5%;
     }
+
     .EMI_term_condition {
         font-size: 14px;
     }

@@ -1,17 +1,19 @@
-.partner_main{
+.partner_main {
     padding: 10px 60px 50px 60px;
 }
-.partner_main_heading{
+
+.partner_main_heading {
     font-family: "Brandon_reg";
     font-size: 48px;
     text-align: left;
 }
-.partner_main_desc{
-    font-family:"Brandon_reg";
-font-size: 24px;
-text-align: left;
-margin-top: -2%;
+
+.partner_main_desc {
+    font-family: "Brandon_reg";
+    font-size: 24px;
+    text-align: left;
 }
+
 @-webkit-keyframes scroll {
     0% {
         transform: translateX(0);
@@ -31,6 +33,7 @@ margin-top: -2%;
         transform: translateX(calc(-250px * 7));
     }
 }
+
 .slider {
     background: white;
     height: 100px;
@@ -38,45 +41,53 @@ margin-top: -2%;
     overflow: hidden;
     position: relative;
 }
+
 .slider::before,
 .slider::after {
     background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
     content: "";
     height: 100px;
     position: absolute;
-    z-index: 2;
+    /* z-index: 2; */
 }
+
 .slider::after {
     right: 0;
     top: 0;
     transform: rotateZ(180deg);
 }
+
 .slider::before {
     left: 0;
     top: 0;
 }
+
 .slider .slide-track {
     -webkit-animation: scroll 40s linear infinite;
     animation: scroll 40s linear infinite;
     display: flex;
     width: calc(250px * 14);
 }
+
 .slider .slide {
     height: 150px;
     width: 350px;
 }
 
 @media screen and (max-width:480px) {
-    .partner_main{
+    .partner_main {
         padding: 5px 30px 5px 30px;
     }
-    .partner_main_heading{
+
+    .partner_main_heading {
         font-size: 40px;
-    }    
-    .partner_main_desc{
-    font-size: 20px;
-    margin-top: -8%;
     }
+
+    .partner_main_desc {
+        font-size: 20px;
+        margin-top: -8%;
+    }
+
     .slider {
         height: 150px;
     }

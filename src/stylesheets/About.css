@@ -1,141 +1,161 @@
-.about-main{
+.about-main {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #222831;
     padding: 10px 60px 5px 60px;
 }
-.about-left{
+
+.about-left {
     flex: 50%;
 }
-.about_img{
-height: 350px;
-width: 500px;
+
+.about_img {
+    height: 350px;
+    width: 500px;
 }
-.about-right{
+
+.about-right {
     flex: 50%;
+    padding-left: 8%;
 }
-.about-right-heading{
+
+.about-right-heading {
     display: flex;
-    /* flex-direction: row; */
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     margin-top: 10%;
 }
-.about_us_heading{
-text-align: left;
-font-size: 30px;
-color: white;
-font-family: "Brandon_reg";
-font-weight: 600;
-margin-top: -10px;
-}
-.animinated-line{
-padding: 0.5px;
-width: 212px;
-background-image: linear-gradient(to right,#CDAF4C, rgb(0, 0, 0));
-margin-left: 25px;
-transform-origin:left;
-transform: scaleX(0);
-animation: animate 3s infinite reverse;
-}
-@keyframes animate{
-    0%{
-        transform: translateX(0) scaleX(0);
-         transform-origin:left;
-    }
-    45%{
-        transform: translateX(0) scaleX(1);
-        transform-origin:left;
-    }
-    50%{
-        transform: translateX(0) scaleX(1);
-        transform-origin:right;
-    }
-    100%{
-        transform: translateX(0) scaleX(0);
-        transform-origin:right;
-    }
-}
-.about_us_title{
+
+.about_us_heading {
+    text-align: left;
+    font-size: 30px;
+    color: white;
     font-family: "Brandon_reg";
-font-size: 48px;
-font-weight: 500;
-text-align: left;
-color: #CDAF4C;
-line-height: 50px;
-margin-top: 0%;
+    font-weight: 600;
+    margin-top: -10px;
 }
-.about_us_desc{
-font-size: 23px;
-text-align: left;
-color: white;
-font-family: "Brandon_reg";
-font-weight: 100;
-margin-top: -4%;
+
+.animinated-line {
+    padding: 0.5px;
+    width: 212px;
+    background-image: linear-gradient(to right, #CDAF4C, rgb(0, 0, 0));
+    margin-left: 25px;
+    transform-origin: left;
+    transform: scaleX(0);
+    animation: animate 3s infinite reverse;
 }
-.book_appointment_btn{
-font-family:"Brandon_reg";
-border: 2px solid;
-border-image: linear-gradient(to right, white, black) 1;
-background: none;
-font-size: 24px;
-text-align: center;
-color: white;
-padding: 5px;
+
+@keyframes animate {
+    0% {
+        transform: translateX(0) scaleX(0);
+        transform-origin: left;
+    }
+
+    45% {
+        transform: translateX(0) scaleX(1);
+        transform-origin: left;
+    }
+
+    50% {
+        transform: translateX(0) scaleX(1);
+        transform-origin: right;
+    }
+
+    100% {
+        transform: translateX(0) scaleX(0);
+        transform-origin: right;
+    }
 }
-.book_appointment_btn:hover{
+
+.about_us_title {
+    font-family: "Brandon_reg";
+    font-size: 48px;
+    font-weight: 500;
+    text-align: left;
+    color: #CDAF4C;
+    line-height: 50px;
+    margin-top: 0%;
+}
+
+.about_us_desc {
+    font-size: 23px;
+    text-align: left;
+    color: white;
+    font-family: "Brandon_reg";
+    font-weight: 100;
+}
+
+.book_appointment_btn {
+    font-family: "Brandon_reg";
+    border: 2px solid;
+    border-image: linear-gradient(to right, white, black) 1;
+    background: none;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+
+.book_appointment_btn:hover {
     background-color: #CDAF4C;
     border-image: linear-gradient(to right, white, black) 1;
     padding-left: 10px;
     transition: ease-in 0.3s;
 }
+
 @media screen and (max-width: 900px) {
-    .about-main{
-        flex-direction:column-reverse;
+    .about-main {
+        flex-direction: column-reverse;
         padding: 5px 30px 5px 30px;
     }
-    .about_img{
-    height: 310px;
-    width: 100%;
+
+    .about_img {
+        height: 310px;
+        width: 100%;
     }
-        .about_us_title{
-            font-size: 45px;
-            }
-            .about_us_desc{
-            font-size: 22px;
-            }
-        
-        
-    .book_appointment_btn{
+
+    .about_us_title {
+        font-size: 45px;
+    }
+
+    .about_us_desc {
+        font-size: 22px;
+    }
+
+
+    .book_appointment_btn {
         margin-left: 30%;
         margin-bottom: 5%;
     }
-    
+
 }
 
 
 @media screen and (max-width: 480px) {
-    .about-main{
-        flex-direction:column-reverse;
+    .about-main {
+        flex-direction: column-reverse;
         padding: 5px 30px 5px 30px;
 
     }
-    .about_img{
-    height: 210px;
-    width: 100%;
+
+    .about_img {
+        height: 210px;
+        width: 100%;
     }
-        .about_us_title{
-            font-size: 40px;
-            }
-            .about_us_desc{
-            font-size: 22px;
-            }
-        
-        
-    .book_appointment_btn{
+
+    .about_us_title {
+        font-size: 40px;
+    }
+
+    .about_us_desc {
+        font-size: 22px;
+    }
+
+
+    .book_appointment_btn {
         margin-left: 15%;
         margin-bottom: 5%;
     }
-    
+
 }

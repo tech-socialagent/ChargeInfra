@@ -24,27 +24,30 @@ function ServiceCard() {
                   alt=""
                 />
               </div>
-            </div>
-            <div className="service_card_hover">
-            
-              <h1 className="card_hover_name">{item.name}</h1>
-              <p className="changing_name">{item.changing_name1}</p>
-              <p className="changing_name">{item.changing_name2}</p>
-              <p className="changing_name">{item.changing_name3}</p>
-              <p className="changing_name">{item.changing_name4}</p>
+
+              {/* onHover Content */}
 
 
-              <p className="card_hover_desc">{item.desc}</p>
-              <button
-                className="card_hover_btn"
-                onClick={() => {
-                  setpopUpbtn(true);
-                }}
-              >
-                Book free consultation
-              </button>
-              <BookNowForm trigger={popUpbtn} setTrigger={setpopUpbtn} />
+              <div className="service_card_hover">
+
+                <h1 className="card_hover_name">{item.name}</h1>
+
+                <p className="card_hover_desc">{item.desc}</p>
+                <button
+                  className="card_hover_btn"
+                  onClick={() => {
+                    setpopUpbtn(true);
+                  }}
+                >
+                  Book free consultation
+                </button>
+                <BookNowForm trigger={popUpbtn} setTrigger={setpopUpbtn} />
+              </div>
+
+
+
             </div>
+
           </section>
         );
       })}

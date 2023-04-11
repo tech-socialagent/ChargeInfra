@@ -3,115 +3,96 @@ import Data from "../Data.json";
 import "../stylesheets/First.css";
 import Home from "./Home";
 import Twelve from "./Twelve";
+import Ten from "./Ten";
+import { useNavigate } from "react-router-dom";
 const Eleven = () => {
-  const [responses, setResponses] = useState({});
-  const [nextBtn,setNextBtn]=useState(false);
-  const[exitBtn,setexitbtn]=useState(false)
-  const exitBtnhandle=()=>{
-    setexitbtn(true);
-    document.getElementById("Eleven").style = "display:none";
 
+  const [nextBtn, setNextBtn] = useState(false);
+  const [prev, setPrev] = useState(false)
+  const navigate = useNavigate()
+
+  const prevBtnhandle = () => {
+    setPrev(true);
   }
 
-
-  const handleNextBtn=()=>{
+  const handleNextBtn = () => {
     setNextBtn(true);
-    document.getElementById('Eleven').style='display:none';
-  }
-
-  const handleResponseChange = (questionId, answerId) => {
-    setResponses((prevResponses) => ({
-      ...prevResponses,
-      [questionId]: answerId,
-    }));
   };
-  const handleSubmit = (event) => {
-    event.preventDefault();
 
-    // Validation - check that the user has answered all questions
-    const isFormValid = Data.quize_data.question11.every(
-      (question) => responses[question.id]
-    );
+  const ElevenCont = () => {
+    return (
+      <section className="question_main" id="Eleven">
+        <div className="question_header">
+          <div className="question_logo">
+            <img
+              src={require("../assets/landing_page_asset/" + Data.navbar.logo)}
+              alt="logo"
+              className="logo"
+            />
+          </div>
+          <div className="question_number">
+            <h1>
+              {Data.quize_data.question_header11.question_number}
+              <span className="unactive_number">/13</span>
+            </h1>
+          </div>
+          <div className="question_exit_btn">
+            <button >{Data.quize_data.question_header.question_exit_btn}</button>
 
-    if (isFormValid) {
-      // Submit the responses via email or another method
-      console.log(responses);
-    } else {
-      alert("Please answer all questions before submitting.");
-    }
-  };
-  return (
-    <>
-    <section className="question_main" id="Eleven">
-      <div className="question_header">
-        <div className="question_logo">
+          </div>
+        </div>
+        <div className="question_background">
           <img
-            src={require("../assets/landing_page_asset/" + Data.navbar.logo)}
-            alt="logo"
-            className="logo"
+            src={require("../assets/questions/" +
+              Data.quize_data.question_background11.img)}
+            alt=""
           />
         </div>
-        <div className="question_number">
-          <h1>
-            {Data.quize_data.question_header11.question_number}
-            <span className="unactive_number">/13</span>
-          </h1>
-        </div>
-        <div className="question_exit_btn">
-          <button onClick={exitBtnhandle}>{Data.quize_data.question_header.question_exit_btn}</button>
-          {exitBtn ? <Home/> : ""}
-        </div>
-      </div>
-      <div className="question_background">
-        <img
-          src={require("../assets/questions/" +
-            Data.quize_data.question_background11.img)}
-          alt=""
-        />
-      </div>
-      <div className="question_screen">
-        <form onSubmit={handleSubmit} className="question_main">
-          {Data.quize_data.question11.map((question) => (
-            <div  key={question.id}>
-              <h1 className="question_title">{question.prompt}</h1>
-              {Data.quize_data.question.map((answer) => (
-                <div className="question_container" key={answer.id}>
-                    {Data.quize_data.answer11.map((answer)=>{
-                    return (
-                      <form className="question_card_main">
-                        <input
-                          type="checkbox"
-                          checked={responses[question.id] === answer.id}
-                          onChange={() =>
-                            handleResponseChange(question.id, answer.id)
-                          }
-                        />
-                        <div  className="question_card">
-                        <img
-                          src={require("../assets/questions/" + answer.img)}
-                          alt=""
-                          type="checkbox"
-                        />
-                        <p>{answer.name}</p>
+        <div className="question_screen">
+          <div className="question_main">
+            {Data.quize_data.question11.map((question) => (
+              <div key={question.id}>
+                <h1 className="question_title">{question.prompt}</h1>
+                {Data.quize_data.question.map((answer) => (
+                  <div className="question_container" key={answer.id}>
+                    {Data.quize_data.answer11.map((answer) => {
+                      return (
+                        <div className="question_card_main">
+                          <input
+                            type="checkbox"
+                          />
+                          <div className="question_card">
+                            <img
+                              src={require("../assets/questions/" + answer.img)}
+                              alt=""
+                              type="checkbox"
+                            />
+                            <p>{answer.name}</p>
+                          </div>
                         </div>
-                      </form>
-                      
-                    );
-                  })}
 
+                      );
+                    })}
+
+                  </div>
+                ))}
+                <div className="btns" >
+                  <button onClick={prevBtnhandle} >Prev</button>
+                  <button onClick={handleNextBtn} className="next_btn">Next</button>
                 </div>
-              ))}
-              <div className="btns">
-                          <button>Prev</button>
-                          <button onClick={handleNextBtn}>Next</button>
-                        </div>
 
-            </div>
-          ))}
-        </form>
-      </div>
-    </section>
-    {nextBtn ? <Twelve/> : ""}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  return (
+    <>
+      {nextBtn ? <Twelve /> : ""}
+      {prev ? <Ten /> : nextBtn ? '' : <ElevenCont />}
     </>
   );
 };

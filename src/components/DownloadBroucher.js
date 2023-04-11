@@ -5,9 +5,11 @@ import Verify from "./Verify";
 import First from "./First";
 import emailjs from "@emailjs/browser";
 import ShowingInterest from "./ShowingInterest";
+import { useNavigate } from "react-router-dom";
 
 function DownloadPopUp(props) {
   const form = useRef();
+  const navigate = useNavigate();
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -92,7 +94,7 @@ function DownloadPopUp(props) {
             <form method="get" action="https://drive.google.com/file/d/1CIez7EbbRf5Nva9OZ8YzONQb1eEET39Z/view?usp=sharing" target="_blank">
             <button className="download_broucher_btn"> Download Now</button>
             </form>
-            <button onClick={showVerifyPop} className="start_quize">
+            <button onClick={()=> navigate('/Quiz')} className="start_quize">
               Start Quize
             </button>
             <p className="pop-up-privacy-policy">

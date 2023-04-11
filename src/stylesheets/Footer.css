@@ -1,58 +1,64 @@
-.footer_main{
+.footer_main {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px 60px 30px 60px;
 }
-.footer_logo,.footer_menu_list,.footer_address,.footer_contact{
+
+.footer_logo,
+.footer_menu_list,
+.footer_address,
+.footer_contact {
     flex: 25%;
     text-align: center;
 }
-.footer_menu_list_main li{
+
+.footer_menu_list_main li {
     list-style: none;
     margin-bottom: 5%;
     font-size: 15px;
     font-family: "Brandon_reg";
     text-decoration: none;
-    color:black;
-
-
-
+    color: black;
 }
-.footer_menu_list_main a{
+
+.footer_menu_list_main a {
     text-decoration: none;
-    }
-.footer_address h1, .footer_contact h1{
-font-family:"Brandon_reg";
-font-size: 48px;
-line-height: 1px;
-}
-.footer_address p ,.footer_contact p{
-    font-family:"Brandon_reg";
-font-size: 20px;
 }
 
-.footer_contact P{
-    margin-top: -3%;
+.footer_address h1,
+.footer_contact h1 {
+    font-family: "Brandon_reg";
+    font-size: 48px;
 }
+
+.footer_address p,
+.footer_contact p {
+    font-family: "Brandon_reg";
+    font-size: 20px;
+}
+
+.footer_contact P {
+}
+
 @media screen and (max-width:900px) {
-    .footer_main{
+    .footer_main {
         padding: 5px 30px 5px 30px;
     }
-    .footer_address h1, .footer_contact h1{
+
+    .footer_address h1,
+    .footer_contact h1 {
         font-size: 30px;
-        line-height: 0px;
-        }
-        .footer_menu_list_main li{
-            font-size: 14px;
-            }
-               
+    }
+
+    .footer_menu_list_main li {
+        font-size: 14px;
+    }
+
 }
 
 @media screen and (max-width:480px) {
-    .footer_main{
-    flex-direction: column;
+    .footer_main {
+        flex-direction: column;
     }
 }
-
-

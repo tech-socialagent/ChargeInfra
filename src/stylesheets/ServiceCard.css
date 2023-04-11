@@ -1,70 +1,62 @@
 .service_card_main {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    position: relative;
-}
-.service_card {
-    margin: 20px;
-    padding-bottom: 10px;
-    position: relative;
+    gap: 20px;
 }
 
-.service_card_img {
-    height: 250px;
-    width: 300px;
+.service_card {
+    height: 100%;
+    position: relative;
+    transition: .3s ease-in-out;
+    color: #fff;
 }
-.service_card_name_main{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position:absolute;
-    bottom:5%;
-    background: rgba(34, 40, 49, 0.7);
-    width: 300px;
+
+.service_card img {
+    width: 100%;
 }
-.service_card_name {
-    font-family: "Brandon_med";
-    font-size: 20px;
-    text-align: center;
-    color: white;
-    margin: 0%;
-}
-.service_card_name_main img{
-    height: 40px;
-}
+
 .service_card_hover {
     display: none;
-    transition: transform 0.50s;
 }
-.service_card_hover:hover{
-    display: block;
+.service_card:hover  .service_card_hover {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #00000049;
+    border-radius: 8px;
 }
-.service_card:hover + .service_card_hover {
-    display: block;
+.service_card_name_main {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background: rgba(34, 40, 49, 0.7);
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    border-radius: 0px 0px 5px 5px;
 }
-.service_card_hover {
-    margin-top: -270px;
-    margin-left: 30px;
-    z-index: 111111;
-    position: relative;
+
+.service_card_name {
+    width: 70%;
+    padding: 0px 4%;
 }
-.card_hover_name {
-    font-size: 30px;
-    font-family: "Brandon_reg";
-    font-weight: 500;
-    color: white;
+
+.service_card_name_main p {
+    margin: 0;
+    font-size: 32px;
     
 }
-.changing_name{
-    margin-top: -5%;
+
+.service_card_name_main img {
+    width: 30%;
 }
-.card_hover_desc {
-    font-family: "Brandon_reg";
-    font-size: 16px;
-    color: white;
-    margin-top: -40px;
-}
+
 .card_hover_btn {
     font-family: "Brandon_reg";
     font-weight: 400;
@@ -76,15 +68,18 @@
     color: white;
     padding: 3px;
 }
-.card_hover_btn:hover{
+
+.card_hover_btn:hover {
     background-color: #CDAF4C;
     border-image: linear-gradient(to right, white, black) 1;
     transition: ease-in 0.3s;
     padding-left: 10px;
+    cursor: pointer;
 }
+
 @media screen and (max-width:800px) {
-    .service_card_hover{
+    .service_card_hover {
         margin-bottom: 30%;
-    }   
+    }
 
 }

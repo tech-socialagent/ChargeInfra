@@ -3,15 +3,55 @@
     background: rgba(34, 40, 49, 1);
     height: 100%;
 }
-.our_project_main h1{
-    font-family:"Brandon_reg";
+
+.our_project_main h1 {
+    font-family: "Brandon_reg";
     font-weight: 600;
     font-size: 30px;
-    text-align:right;
+    text-align: right;
     color: white;
 }
+.titleLine{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 6%;
+}
+
+.animinated-line {
+    padding: 0.5px;
+    width: 212px;
+    background-image: linear-gradient(to right, #CDAF4C, rgb(0, 0, 0));
+    margin-left: 25px;
+    transform-origin: left;
+    transform: scaleX(0);
+    animation: animate 3s infinite reverse;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateX(0) scaleX(0);
+        transform-origin: left;
+    }
+
+    45% {
+        transform: translateX(0) scaleX(1);
+        transform-origin: left;
+    }
+
+    50% {
+        transform: translateX(0) scaleX(1);
+        transform-origin: right;
+    }
+
+    100% {
+        transform: translateX(0) scaleX(0);
+        transform-origin: right;
+    }
+}
+
 @media screen and (max-width:480px) {
     .our_project_main {
         padding: 5px 30px 5px 30px;
-    }    
+    }
 }

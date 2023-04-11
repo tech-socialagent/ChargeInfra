@@ -29,7 +29,6 @@
 
 .choose_section_heading {
     font-size: 48px;
-    padding-left: 60px;
     color: white;
     font-family: "Brandon_reg";
     font-weight: 600;
@@ -39,8 +38,7 @@
     height: 2px;
     width: 200px;
     background-image: linear-gradient(to right, #CDAF4C, rgb(0, 0, 0));
-    margin-top: -35px;
-    margin: -35px 0px 2% 15%;
+
     transform-origin: left;
     transform: scaleX(0);
     animation: animate 3s infinite alternate-reverse;
@@ -71,6 +69,7 @@
 .choose_icon_section {
     display: flex;
     justify-content: space-evenly;
+    margin-top: 4%;
 }
 
 .choose_us_section {
@@ -96,9 +95,7 @@
 .choose_us_desc {
     color: white;
     margin-left: 20px;
-    margin-top: -10px;
     font-size: 18px;
-    line-height: 10px;
     font-family: "Brandon_reg";
 }
 
@@ -110,13 +107,11 @@
 }
 
 .warranty_list {
-    margin-top: -6%;
 }
 
 .warranty_list li {
     font-size: 24px;
     color: white;
-    line-height: 42px;
     font-family: "Brandon_reg";
 }
 
@@ -128,7 +123,6 @@
 }
 
 .technology_list {
-    margin-top: -6%;
 }
 
 .technology_list li {

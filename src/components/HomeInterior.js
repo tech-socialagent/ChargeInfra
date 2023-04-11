@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../stylesheets/HomeInterior.css";
 import Data from "../Data.json";
 import { useState } from "react";
 import DownloadBroucher from "../components/DownloadBroucher";
+import DownloadPopup from "./DownloadPopup/DownloadPopup";
+import { DownloadContext } from "../Context";
 function HomeInterior() {
-  const [popUpbtn, setpopUpbtn] = useState(false);
+  // const [popUpbtn, setpopUpbtn] = useState(false);
+  // const [downloadPop, setDownloadPop] = useState(true)
+  const {downloadPop, setDownloadPop} = useContext(DownloadContext);
 
   return (
     <>
@@ -20,7 +24,7 @@ function HomeInterior() {
         <button
           className="homeInterior_btn"
           onClick={() => {
-            setpopUpbtn(true);
+            setDownloadPop(true)
           }}
         >
           <img
@@ -39,7 +43,8 @@ function HomeInterior() {
         />
       </div>
     </section>
-    <DownloadBroucher trigger={popUpbtn} setTrigger={setpopUpbtn} />
+    {/* <DownloadBroucher trigger={popUpbtn} setTrigger={setpopUpbtn} /> */}
+    { downloadPop ? <DownloadPopup /> : ''}
   </>
   );
 }

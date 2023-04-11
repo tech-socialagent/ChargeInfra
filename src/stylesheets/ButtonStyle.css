@@ -1,0 +1,17 @@
+.book_appointment_btn {
+    font-family: "Brandon_reg";
+    border: 2px solid;
+    border-image: linear-gradient(to right, white, black) 1;
+    background: none;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+
+.book_appointment_btn:hover {
+    background-color: #CDAF4C;
+    border-image: linear-gradient(to right, white, black) 1;
+    padding-left: 10px;
+    transition: ease-in 0.3s;
+}

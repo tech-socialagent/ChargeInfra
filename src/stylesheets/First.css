@@ -8,7 +8,8 @@
     justify-content: space-between;
     position: -webkit-sticky;
     position: sticky;
-    top: -5px;
+    top: 0;
+    left: 0;
     z-index: 2222;
     height: 70px;
     background-color: #fff;
@@ -66,14 +67,15 @@
     left: 0%;
     z-index: -1;
     width: 100%;
-    height: 170vh;
+    height: 100vh;
     min-height: auto;
 }
 
 .question_screen {
     background: rgba(255, 255, 255, 0.4);
-    margin: 10% 10% -5% 10%;
-    height: 150vh;
+    margin: 3%;
+    margin-top: 0;
+    padding: 4%;
     min-height: auto;
 }
 
