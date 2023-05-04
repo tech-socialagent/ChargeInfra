@@ -3,7 +3,8 @@
     justify-content: center;
     align-items: center;
     background-color: #222831;
-    padding: 40px 60px 5px 60px;
+    padding: 4% 0;
+    padding-top: 0;
 
 }
 p{
@@ -17,7 +18,12 @@ p{
 }
 
 .parent_company_left img {
-    height: 350px;
+    height: 90%;
+    width: 90%;
+    padding: 4px;
+    background: linear-gradient(to right, #CDAF4C 4px, transparent 4px) 0 0, /* linear-gradient(to right, #CDAF4C 4px, transparent 4px) 0 100%, */ /* linear-gradient(to left, #CDAF4C 4px, transparent 4px) 100% 0, */ linear-gradient(to left, #CDAF4C 4px, transparent 4px) 100% 100%, linear-gradient(to bottom, #CDAF4C 4px, transparent 4px) 0 0, /* linear-gradient(to bottom, #CDAF4C 4px, transparent 4px) 100% 0, */ /* linear-gradient(to top, #CDAF4C 4px, transparent 4px) 0 100%, */ linear-gradient(to top, #CDAF4C 4px, transparent 4px) 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 8% 12%;
 }
 
 .parent_company_right {
@@ -54,7 +60,8 @@ p{
     font-size: 31px;
     color: white;
     font-family: "Brandon_med";
-    margin-top: -1%;
+    /* margin-top: -1%; */
+    margin: 4% 0;
 }
 
 .parent_company_logo_btn {
@@ -71,12 +78,12 @@ p{
 
 @media screen and (max-width:900px) {
     .parent_company_main {
-        flex-direction: column;
-        padding: 5px 30px 5px 30px;
+        flex-direction: column-reverse;
+        padding: 3%;
     }
 
     .parent_company_left img {
-        height: 60vh;
+        /* height: 60vh; */
         width: 100%
     }
 
@@ -86,9 +93,9 @@ p{
 
 }
 
-@media screen and(max-width:480px) {
-    .parent_company_left img {
-        height: 50vh;
+@media screen and (max-width:750px) {
+   
+    .parent_company_left{
         width: 100%;
     }
 

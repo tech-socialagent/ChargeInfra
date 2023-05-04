@@ -2,10 +2,12 @@ import React from "react";
 import Data from "../Data.json";
 import "../stylesheets/ServiceCard.css";
 import BookNowForm from "../components/BookNowForm";
-import { useState } from "react";
+import { useContext } from "react";
+import { BookingContext } from "../Context";
+
 function ServiceCard() {
-  const [popUpbtn, setpopUpbtn] = useState(false);
-  const [trigger, setTrigger] = useState();
+
+  const { booking, setBooking } = useContext(BookingContext);
   return (
     <section className="service_card_main">
       {Data.services_section.services_list.map((item) => {
@@ -30,18 +32,17 @@ function ServiceCard() {
 
               <div className="service_card_hover">
 
-                <h1 className="card_hover_name">{item.name}</h1>
+                <h1 className="cards_hover_name">{item.name}</h1>
 
-                <p className="card_hover_desc">{item.desc}</p>
+                <p className="cards_hover_desc">{item.desc}</p>
                 <button
                   className="card_hover_btn"
                   onClick={() => {
-                    setpopUpbtn(true);
+                    setBooking(true);
                   }}
                 >
                   Book free consultation
                 </button>
-                <BookNowForm trigger={popUpbtn} setTrigger={setpopUpbtn} />
               </div>
 
 

@@ -1,3 +1,16 @@
+
+
+
+
+
+// Home page
+
+
+
+
+
+
+
 import React from 'react';
 import Data from '../Data.json';
 import '../stylesheets/ParentCompany.css';

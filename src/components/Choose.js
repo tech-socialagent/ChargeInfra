@@ -1,3 +1,12 @@
+
+
+
+
+// Why Choose Us Section
+
+
+
+
 import React from "react";
 import "../stylesheets/Choose.css";
 import Data from "../Data.json";
@@ -46,7 +55,7 @@ function Choose() {
         </div>
       </div>
       <div className="choose_icon_section">
-        <div className="choose_us_section2">
+        <div className="choose_us_section">
           <img
             src={require("../assets/chhose_us/" +
               Data.choose_us_section.choose_us_4.img)}
@@ -57,7 +66,7 @@ function Choose() {
             <p>{Data.choose_us_section.choose_us_4.des}</p>
           </div>
         </div>
-        <div className="choose_us_section2">
+        <div className="choose_us_section">
           <img
             src={require("../assets/chhose_us/" +
               Data.choose_us_section.choose_us_5.img)}
@@ -68,7 +77,7 @@ function Choose() {
             <p>{Data.choose_us_section.choose_us_5.des}</p>
           </div>
         </div>
-        <div className="choose_us_section2">
+        <div className="choose_us_section">
           <img
             src={require("../assets/chhose_us/" +
               Data.choose_us_section.choose_us_6.img)}
@@ -79,7 +88,7 @@ function Choose() {
             <p>{Data.choose_us_section.choose_us_6.des}</p>
           </div>
         </div>
-        <div className="choose_us_section2">
+        <div className="choose_us_section">
           <img
             src={require("../assets/chhose_us/" +
               Data.choose_us_section.choose_us_7.img)}

@@ -1,12 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../stylesheets/EMI.css";
 import Data from "../Data.json";
-import BookNowForm from '../components/BookNowForm';
-import { useState } from "react";
+import { BookingContext } from "../Context";
 
 function EMI() {
-  const[popUpbtn, setpopUpbtn]=useState(false);
-  const [trigger, setTrigger]=useState();
+
+  const {booking, setBooking } = useContext(BookingContext);
+
   return (
     <section className="EMI_back">
     <section className="EMI_main">
@@ -14,11 +14,11 @@ function EMI() {
       <section className="EMI_detail">
         <div className="EMI_left">
           <div className="EMI_left_img_main">
-            <img
+            {/* <img
               src={require("../assets/EMI/" + Data.EMI.EMI_pic)}
               alt=""
               className="EMI_img"
-            />
+            /> */}
           </div>
           <div className="EMI_left_text_main">
             <h1>Design Now, Pay later</h1>
@@ -41,8 +41,8 @@ function EMI() {
             Want to book a <br/><span id="free_text"> FREE</span> Consultation
             session?
           </p>
-          <button className="book_now_btn" onClick={()=>{setpopUpbtn(true)}}>Book now</button>
-          <BookNowForm trigger={popUpbtn}  setTrigger={setpopUpbtn}/>
+          <button className="book_now_btn" onClick={()=>{setBooking(true)}}>Book now</button>
+        
         </div>
       </section>
     </section>

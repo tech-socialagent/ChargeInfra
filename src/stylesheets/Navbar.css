@@ -1,5 +1,5 @@
-.navbar-main{
-    display: flex;
+.navbar-main {
+	display: flex;
 	align-items: center;
 	position: -webkit-sticky;
 	position: sticky;
@@ -11,68 +11,94 @@
 	padding: 0 1rem;
 	box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 11%);
 }
-.navbar-right{
-    flex: 30%;
-    text-align:left;
+
+.navbar-right {
+	flex: 30%;
+	text-align: left;
 }
-.logo{
-    height: 52px;
+
+.logo {
+	height: 52px;
 }
-.navbar-left{
-    flex: 70%;
+
+.navbar-left {
+	flex: 70%;
 }
-.navbar-left2{
+
+.navbar-left2 {
 	display: none;
 }
-.navbar-list{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;   
+
+.navbar-list {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+
 }
-.navbar-list li:hover{
+
+.navbar-list li {
+	border: 2px solid #fff;
+	transition: ease-in 0.2s;
+	padding-top: 4px;
+	padding-right: 6px;
+	border-left: none;
+	border-bottom: none;
+
+}
+
+.navbar-list li:hover {
+	border: 2px solid #CDAF4C;
+	padding-top: 4px;
+	padding-right: 6px;
+	border-left: none;
+	border-bottom: none;
+	color: #CDAF4C;
+
+}
+
+.navbar-list a,
+.navbar_contact {
+	font-family: "Brandon_reg";
+	text-decoration: none;
+	color: black;
+	font-size: 15px;
+}
+
+.navbar_contact {
+	font-family: "Brandon_reg";
 	border: 2px solid;
-	border-image: linear-gradient(to right, white, #CDAF4C) 1;
-	padding: 5px 9px;
+	border-image: linear-gradient(to left, white, #CDAF4C) 1;
+	background: none;
+	font-size: 22px;
+	text-align: center;
 	transition: ease-in 0.3s;
-	color: #a1831f;
-
-}
-.navbar-list a, .navbar_contact{
-font-family: "Brandon_reg";
-text-decoration: none;
-color:black;
-font-size: 15px;
-}
-.navbar_contact{
-font-family:"Brandon_reg";
-border: 2px solid;
-border-image: linear-gradient(to left, white, #CDAF4C) 1;
-background: none;
-font-size: 22px;
-text-align: center;
-border-radius: 10px;
-}
-.navbar_contact:hover{
-	background-color:  #a1831f;
-	color: white;
-	transition: ease-in 0.3s;
-
+	/* border-radius: 10px; */
 }
 
-#mobile{
+.navbar_contact:hover {
+	background-color: #222831;
+	color: #fff;
+	cursor: pointer;
+	border-image: linear-gradient(to left, #CDAF4C, white) 1;
+}
+
+#mobile {
 	color: black;
 	display: none;
-	margin-right:40px;
+	margin-right: 40px;
 }
+
 @media screen and (max-width:1200px) {
-	.navbar-left{
+	.navbar-left {
 		display: none;
 	}
-	#mobile{
+
+	#mobile {
 		display: block;
 	}
-	.navbar-main{
+
+	.navbar-main {
 		/* max-width: 1100px; */
 		margin: 0%;
 		padding: 0%;
@@ -80,54 +106,55 @@ border-radius: 10px;
 		justify-content: space-between;
 		align-items: center;
 		/* height: 100%; */
-	  
+
 	}
-.navbar-left2{
-	display: block;
-	position: fixed;
-	position: absolute;
-	right:0%;
-	top: 0%;
-	padding: 0% 5% 5% 1%;
-	background-color:rgb(255, 255, 255);
-	background-color: white;
-	width: 20%;
-	margin-top: 7%;
-	height: 80vh;
-	transition: all 0.3s ease-in;
-	overflow: hidden;  
-}	
-.navbar-left2.active{
-	width: 270px;
-	right: 0%;
-}
-.navbar-left2 ul{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-    flex-direction: column;
-}
-.navbar-left2 ul li{
-    margin-top: 15px;
-	padding: 0px 0px;
 
-}
-}
-@media screen and (max-width:900px) {
+	.navbar-left2 {
+		display: block;
+		position: fixed;
+		position: absolute;
+		right: 0%;
+		top: 0%;
+		padding: 0% 5% 5% 1%;
+		background-color: rgb(255, 255, 255);
+		background-color: white;
+		width: 20%;
+		margin-top: 60px;
+		height: 80vh;
+		transition: all 0.3s ease-in;
+		overflow: hidden;
+	}
 
-.navbar-left2{
+	.navbar-left2.active {
+		width: 270px;
+		right: 0%;
+	}
+
+	.navbar-left2 ul {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.navbar-left2 ul li {
+		margin-top: 15px;
+		padding: 0px 0px;
+
+	}
+}
+
+@media screen and (max-width:750px) {
+
+	.navbar-left2 {
 		padding: 0% 5% 5% 1%;
 		width: 50%;
-		margin-top:8%;
+		margin-top: 60px;
 		height: 80vh;
-	}	
-	.navbar-left2 ul li{
+	}
+
+	.navbar-left2 ul li {
 		margin-top: 20px;
 		font-size: 20px;
-	}
-}
-@media screen and (max-width:480px) {
-	.navbar-left2{
-		margin-top: 18%;
 	}
 }

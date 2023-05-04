@@ -10,13 +10,19 @@ import db from '../../FirebaseConfig'
 const DownloadPopup = () => {
   const { setDownloadPop } = useContext(DownloadContext);
   const [active, setActive] = useState("Form")
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [phoneno, setPhoneno] = useState('')
+  const [propertyName, setPropertyName] = useState('')
   const navigate = useNavigate();
   const [otp, setotp] = useState('')
+  const [invalidOtp, setinvalidOtp] = useState(false)
 
 
 
   const handleDeonloadBtn = (event) => {
     event.preventDefault();
+    setActive('OTP')
 
     //reCaptch
     const auth = getAuth();
@@ -28,16 +34,15 @@ const DownloadPopup = () => {
     }, auth);
 
 
-    const phoneNumber = '+919483262200';
+    const phoneNumber = '+91' + phoneno;
     const appVerifier = window.recaptchaVerifier;
+
     signInWithPhoneNumber(auth, phoneNumber, appVerifier)
       .then((confirmationResult) => {
-        alert('sms sent')
-        setActive('OTP')
         window.confirmationResult = confirmationResult;
         // ...
       }).catch((error) => {
-        alert('Error')
+
       });
   }
 
@@ -50,32 +55,14 @@ const DownloadPopup = () => {
       // ...
     }).catch((error) => {
       // User couldn't sign in (bad verification code?)
-      alert(error)
+      setinvalidOtp(true);
       // ...
     });
   }
 
-  const Form = () => {
-    return (
-      <>
-        <form action="" className='Downloadform' onSubmit={handleDeonloadBtn} >
-          <input type="text" placeholder='Name*' />
-          <input type="email" placeholder='Email*' />
-          <input type="text" placeholder='Phone Number*' />
-          <input type="text" placeholder='Property Name' />
 
-          <div className="downloadBtn"  >
-            <input type='submit' value={active} />
-          </div>
-        </form>
-        <div className="DownloadPolicy">
-          <p>By submitting this form, you agree to the Privacy Policy & Terms and Conditions</p>
-        </div>
-      </>
-    )
-  }
 
-  const Quiz = () => {
+  const Thankyou = () => {
     return (
       <div className='QuizeWrap'>
         <div className="thanksText">
@@ -97,14 +84,6 @@ const DownloadPopup = () => {
       </div>
     )
   }
-  const OTP = () => {
-    return (
-      <div className="sendOtpWrap">
-        <input autoFocus="autofocus" type="text" value={otp} onChange={(e) => {setotp(e.target.value)}} placeholder='OTP' required />
-        <button onClick={handleVerification} >Verify</button>
-      </div>
-    )
-  }
 
 
 
@@ -118,7 +97,41 @@ const DownloadPopup = () => {
           </div>
         </div>
         <div className="mainSection" >
-          {active === "Form" ? <Form /> : active === "OTP" ? <OTP /> : <Quiz />}
+          {active === "Form" ?
+
+            // Info Form
+            <div className='form'>
+              <form action="" className='Downloadform' onSubmit={handleDeonloadBtn} >
+                <input type="text" placeholder='Name*' required onChange={(e) => setName(e.target.value)} />
+                <input type="email" placeholder='Email*' required value={email} onChange={(e) => setEmail(e.target.value)} />
+                <input type="text" placeholder='Phone Number*' required value={phoneno} onChange={(e) => setPhoneno(e.target.value)} />
+                <input type="text" placeholder='Property Name' required value={propertyName} onChange={(e) => setPropertyName(e.target.value)} />
+
+                <div className="downloadBtn"  >
+                  <input type='submit' value="SUBMIT" />
+                </div>
+              </form>
+              <div className="DownloadPolicy">
+                <p className='pop-up-privacy-policy'>By submitting this form, you agree to the <span className='EMI_yellow_text'>Privacy Policy </span> & <span className='EMI_yellow_text'>Terms and Conditions</span></p>
+              </div>
+            </div>
+
+            : active === "OTP" ?
+
+              // OPT form
+
+              <div className="sendOtpWrap">
+                <input className={invalidOtp ? 'inputError' : 'input'} autoFocus="autofocus" type="text" value={otp} onChange={(e) => { setotp(e.target.value) }} placeholder='Enter OTP' required />
+                <button onClick={handleVerification} >Verify</button>
+                <p className={invalidOtp ? 'alertActive' : 'alertInactive'}>Invalid OTP</p>
+              </div>
+
+              :
+
+              // thankyou
+              <Thankyou />
+
+          }
         </div>
 
       </div>

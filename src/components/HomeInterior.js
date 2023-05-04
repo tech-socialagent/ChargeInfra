@@ -1,3 +1,18 @@
+
+
+
+
+
+
+
+// Homepage Section
+
+
+
+
+
+
+
 import React, { useContext } from "react";
 import "../stylesheets/HomeInterior.css";
 import Data from "../Data.json";
@@ -26,14 +41,7 @@ function HomeInterior() {
           onClick={() => {
             setDownloadPop(true)
           }}
-        >
-          <img
-            src={require("../assets/interior/" +
-              Data.home_interior.home_interior_left.home_interior_btn_img)}
-            alt=""
-          />
-          <p>{Data.home_interior.home_interior_left.home_interior_btn_text}</p>
-        </button>
+        >Download</button>
       </div>
       <div className="homeInterior_right">
         <img

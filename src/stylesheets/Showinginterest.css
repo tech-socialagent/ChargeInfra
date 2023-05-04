@@ -20,7 +20,9 @@
     width: 70%;
     padding: 20px;
 }
-
+.showing_interest_up img{
+    width: 100%;
+}
 .showing_interest_down{
     text-align: center;
     color: white;
@@ -46,5 +48,7 @@ font-weight: 300;
     padding: 2px;
     width: 200px;
     margin-top: 20px;
-       
+}
+.next_btn{
+    cursor: pointer;
 }

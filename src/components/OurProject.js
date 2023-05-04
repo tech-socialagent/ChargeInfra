@@ -1,3 +1,10 @@
+
+
+
+// Our project Home Section
+
+
+
 import React from 'react';
 import Data from '../Data.json';
 import '../stylesheets/OurProject.css';

@@ -13,15 +13,23 @@ import Partner from '../components/Partner';
 import Testimonials from '../components/Testimonials';
 import Footer from '../components/Footer';
 import OurProject from '../components/OurProject';
+import DownloadPopUp from '../components/DownloadBroucher';
+import OurProjectCard from '../components/OurProjectCard';
+import ParentQuize from '../components/ParentQuize';
+import ServiceCard from '../components/ServiceCard';
+import ThankU from '../components/ThankU';
+import Thanks from '../components/Thanks';
+import BookNowForm from '../components/BookNowForm';
 
 const HomePage = () => {
     return (
         <div className="App">
             <Navbar />
+            <BookNowForm />
             <Home />
             <About />
             <Choose />
-            <OurProject />
+            {/* <OurProject /> */}
             <Services />
             <Construction />
             <HowWork />

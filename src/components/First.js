@@ -1,4 +1,4 @@
-import React, { useState, useRef, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import Data from "../Data.json";
 import "../stylesheets/First.css";
 import Second from "./Second";
@@ -12,17 +12,30 @@ const First = () => {
   const [prev, setPrev] = useState(false)
   const navigate = useNavigate()
 
-  const {Q1, setQ1} = useContext(QuizContext); 
+  // const [select, setSelect] = useState()
+
+  const { Q1, setQ1 } = useContext(QuizContext);
 
   const prevBtnhandle = () => {
     setPrev(true);
   }
 
   const handleNextBtn = () => {
-    setNextBtn(true);
+    if (Q1 != '') {
+      setNextBtn(true);
+    }
+    else {
+      alert("Select One Option")
+    }
   };
 
-
+  const handleSelection = (answer) => {
+    // setSelect(!select);
+    setQ1(answer);
+  }
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   const FirstCont = () => {
     return (
       <>
@@ -53,10 +66,16 @@ const First = () => {
               alt=""
             />
           </div>
+          <div className="question_number_mobile">
+            <h1>
+              {Data.quize_data.question_header.question_number}
+              <span className="unactive_number">/13</span>
+            </h1>
+          </div>
           {Data.quize_data.question.map((question) => (
             <h1 className="question_title">{question.prompt}</h1>
           ))}
-
+          
           <div className="question_screen">
             <div className="question_main">
               {Data.quize_data.question.map((question) => (
@@ -66,15 +85,10 @@ const First = () => {
                       {Data.quize_data.answer.map((answer) => {
                         return (
                           <div className="question_card_main"  >
-                            <input
-                              type="checkbox"
-
-                            />
-                            <div className="question_card">
+                            <div onClick={() => handleSelection(answer.name)} className={Q1 == answer.name ? "question_card_selected" : "question_card"}>
                               <img
                                 src={require("../assets/questions/" + answer.img)}
                                 alt=""
-                                type="checkbox"
                               />
                               <p>{answer.name}</p>
                             </div>

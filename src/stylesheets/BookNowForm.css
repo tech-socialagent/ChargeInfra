@@ -1,9 +1,9 @@
 .BookNow-pop-up-main {
     position: fixed;
-    top: 12%;
+    top: 20%;
     left: 35%;
     width: 30%;
-    height: 70vh;
+    /* height: 70vh; */
     background-color: rgb(255, 255, 255);
     box-shadow: 1px 1px 7px 3px gray;
     padding: 20px;

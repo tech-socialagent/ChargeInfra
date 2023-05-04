@@ -1,23 +1,42 @@
-import React, { useState } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import Data from "../Data.json";
 import "../stylesheets/First.css";
 import Home from "./Home";
 import Seven from "./Seven";
 import { useNavigate } from "react-router-dom";
 import Five from "./Five";
+import { QuizContext } from "../Context";
+
 const Six = () => {
 
   const [nextBtn, setNextBtn] = useState(false);
   const [prev, setPrev] = useState(false)
   const navigate = useNavigate()
 
+  const { Q6, setQ6 } = useContext(QuizContext);
+
   const prevBtnhandle = () => {
     setPrev(true);
   }
 
   const handleNextBtn = () => {
-    setNextBtn(true);
+    if (Q6 != '') {
+      setNextBtn(true);
+    }
+    else {
+      alert("Select One Option")
+    }
   };
+
+  const handleSelection = (answer) => {
+    // setSelect(!select);
+    setQ6(answer);
+    console.log("Q6", Q6)
+  }
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   const SixCont = () => {
     return (
       <section className="question_main" id="six">
@@ -36,7 +55,7 @@ const Six = () => {
             </h1>
           </div>
           <div className="question_exit_btn">
-            <button>{Data.quize_data.question_header.question_exit_btn}</button>
+          <button onClick={() => navigate('/')}>{Data.quize_data.question_header.question_exit_btn}</button>
 
           </div>
         </div>
@@ -48,6 +67,12 @@ const Six = () => {
           />
         </div>
         <div className="question_screen">
+        <div className="question_number_mobile">
+            <h1>
+              {Data.quize_data.question_header6.question_number}
+              <span className="unactive_number">/13</span>
+            </h1>
+          </div>
           <div className="question_main">
             {Data.quize_data.question6.map((question) => (
               <div key={question.id}>
@@ -57,14 +82,11 @@ const Six = () => {
                     {Data.quize_data.answer6.map((answer) => {
                       return (
                         <div className="question_card_main">
-                          <input
-                            type="checkbox"
-                          />
+
                           <div className="question_card_btn">
-                            <button className="quize_btn">{answer.btn}</button>
+                            <button onClick={() => handleSelection(answer.btn)} className={Q6 == answer.btn ? "question_card_selected_btn" : "quize_btn"}>{answer.btn}</button>
                           </div>
                         </div>
-
                       );
                     })}
 

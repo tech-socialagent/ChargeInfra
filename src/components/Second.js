@@ -1,9 +1,10 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import Data from "../Data.json";
 import "../stylesheets/First.css";
 import Three from "./Three";
 import { useNavigate } from "react-router-dom";
 import First from "./First";
+import { QuizContext } from "../Context";
 
 const Second = () => {
 
@@ -11,13 +12,29 @@ const Second = () => {
   const [prev, setPrev] = useState(false)
   const navigate = useNavigate()
 
+  const { Q2, setQ2 } = useContext(QuizContext);
+
   const prevBtnhandle = () => {
     setPrev(true);
   }
 
   const handleNextBtn = () => {
-    setNextBtn(true);
+    if (Q2 != '') {
+      setNextBtn(true);
+    }
+    else {
+      alert("Select One Option")
+    }
   };
+
+  const handleSelection = (answer) => {
+    // setSelect(!select);
+    setQ2(answer);
+    console.log("Q2", Q2)
+  }
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   const SeconCont = () => {
     return (
@@ -50,6 +67,12 @@ const Second = () => {
             />
           </div>
           <div className="question_screen">
+          <div className="question_number_mobile">
+            <h1>
+              {Data.quize_data.question_header2.question_number}
+              <span className="unactive_number">/13</span>
+            </h1>
+          </div>
             <div className="question_main">
               {Data.quize_data.question2.map((question) => (
                 <div key={question.id}>
@@ -58,15 +81,11 @@ const Second = () => {
                     <div className="question_container" key={answer.id}>
                       {Data.quize_data.answer2.map((answer) => {
                         return (
-                          <div className="question_card_main">
-                            <input
-                              type="checkbox"
-                            />
-                            <div className="question_card">
+                          <div className="question_card_main"  >
+                            <div onClick={() => handleSelection(answer.name)} className={Q2 == answer.name ? "question_card_selected" : "question_card"}>
                               <img
                                 src={require("../assets/questions/" + answer.img)}
                                 alt=""
-                                type="checkbox"
                               />
                               <p>{answer.name}</p>
                             </div>

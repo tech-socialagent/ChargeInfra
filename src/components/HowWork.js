@@ -1,3 +1,8 @@
+
+
+// Home page Section
+
+
 import React from "react";
 import "../stylesheets/HowWork.css";
 import Data from "../Data.json";

@@ -4,7 +4,7 @@
 }
 
 .EMI_back::before {
-    content: "";
+    /* content: "";
     position: absolute;
     width: 100%;
     height: 100%;
@@ -12,7 +12,7 @@
     background-image: url('../assets/EMI/emi_back');
     background-repeat: repeat-y;
     transform: rotate(180deg);
-    background-size: 100%;
+    background-size: 100%; */
 }
 
 .EMI_main {
@@ -54,13 +54,13 @@
     padding: 4px;
     background:
         linear-gradient(to right, #CDAF4C 10px, transparent 10px) 0 0,
-        linear-gradient(to right, #CDAF4C  10px, transparent 10px) 0 100%,
-        linear-gradient(to left, #CDAF4C  10px, transparent 10px) 100% 0,
-        linear-gradient(to left, #CDAF4C  10px, transparent 10px) 100% 100%,
-        linear-gradient(to bottom, #CDAF4C  10px, transparent 10px) 0 0,
-        linear-gradient(to bottom, #CDAF4C  10px, transparent 10px) 100% 0,
-        linear-gradient(to top, #CDAF4C  10px, transparent 10px) 0 100%,
-        linear-gradient(to top, #CDAF4C  10px, transparent 10px) 100% 100%;
+        linear-gradient(to right, #CDAF4C 10px, transparent 10px) 0 100%,
+        linear-gradient(to left, #CDAF4C 10px, transparent 10px) 100% 0,
+        linear-gradient(to left, #CDAF4C 10px, transparent 10px) 100% 100%,
+        linear-gradient(to bottom, #CDAF4C 10px, transparent 10px) 0 0,
+        linear-gradient(to bottom, #CDAF4C 10px, transparent 10px) 100% 0,
+        linear-gradient(to top, #CDAF4C 10px, transparent 10px) 0 100%,
+        linear-gradient(to top, #CDAF4C 10px, transparent 10px) 100% 100%;
 
     background-repeat: no-repeat;
     background-size: 40px 40px;
@@ -75,6 +75,7 @@
     padding: 8%;
     text-align: left;
     z-index: 11;
+    background-image: url('../assets/EMI/EMI main.png');
 }
 
 .EMI_left_text_main h1 {
@@ -132,7 +133,7 @@
     font-family: "Brandon_med";
     padding: 3px 40px 3px 40px;
     position: relative;
-    z-index: 100;
+    margin-top: 4%;
 }
 
 .book_now_btn:hover {
@@ -143,23 +144,32 @@
     padding: 3px 45px 3px 45px;
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:750px) {
     .EMI_main {
-        padding: 5px 30px 5px 30px;
+        padding: 3%;
+    }
+
+    .EMI_main h1 {
+        font-size: 28px;
+        color: #fff;
     }
 
     .EMI_detail {
         flex-direction: column;
+        align-items: start;
     }
 
     .EMI_img {
-        height: 70vh;
+        height: 100%;
+        width: 100%;
+    }
+
+    .EMI_left {
         width: 100%;
     }
 
     .EMI_left_text_main h1 {
-        font-size: 40px;
-        margin-top: 0%;
+        font-size: 32px;
     }
 
     .EMI_left_dec {
@@ -173,6 +183,7 @@
 
     .EMI_right {
         padding-left: 0px;
+        margin: 0;
     }
 
     .EMI_title {
@@ -184,21 +195,6 @@
         font-size: 22px;
         padding: 3px 30px 3px 30px;
     }
-
+    
 }
 
-@media screen and (max-width:480px) {
-    .EMI_left_text_main h1 {
-        font-size: 30px;
-    }
-
-    .EMI_left_dec {
-        font-size: 18px;
-        margin-top: -5%;
-    }
-
-    .EMI_term_condition {
-        font-size: 14px;
-    }
-
-}

@@ -1,19 +1,44 @@
-
 @font-face {
-  font-family:"Brandon_bld";
+  font-family: "Brandon_bld";
   src: url("../src/font/Brandon-Grotesque-Font//brand_ssv/Brandon_bld.otf");
 }
+
 @font-face {
-  font-family:"Brandon_med";
+  font-family: "Brandon_med";
   src: url('../src/font/Brandon-Grotesque-Font/brand_ssv/Brandon_med.otf');
 }
+
 @font-face {
-  font-family:"Brandon_reg";
+  font-family: "Brandon_reg";
   src: url('../src/font/Brandon-Grotesque-Font/brand_ssv/Brandon_reg.otf');
 }
 
-.App{
+.App {
   font-family: "Brandon-Grotesque-light";
 
 }
 
+.question_card {
+  margin-top: 20px;
+  border: 3px solid #fff;
+}
+
+.question_card_selected {
+  background: #CDAF4C;
+  border: 3px solid #CDAF4C;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.question_card_selected_btn {
+  height: 40px;
+  width: 250px;
+  border-radius: 5px;
+  font-family: "Brandon_reg";
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  border: none;
+  background: #CDAF4C;
+}

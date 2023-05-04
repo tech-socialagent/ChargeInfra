@@ -1,9 +1,10 @@
 .downloadWrap {
-    width: 300px;
-    height: max-content;
+    width: 30%;
+    min-width: 300px;
+    height: 60vh;
     position: fixed;
-    top: 30%;
-    left: 35%;
+    top: 15%;
+    left: 30%;
     background: #fff;
     padding: 3%;
     padding-top: 1%;
@@ -16,20 +17,27 @@
     justify-content: space-between;
     align-items: center;
 }
-.close{
+
+.close {
     font-size: 20px;
+    cursor: pointer;
 }
+
 .Downloadform {
     display: flex;
     flex-direction: column;
     width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .Downloadform input {
+    width: 70%;
+    height: 35px;
+    border-radius: 5px;
+    padding-left: 20px;
+    border: 1px solid gray;
     margin-top: 10px;
-    padding: 2%;
-    border: 1px #00000065 solid;
-    border-radius: 6px;
 }
 
 .Downloadform input:focus {
@@ -37,32 +45,152 @@
     outline: none;
 }
 
-.downloadBtn {
-    margin: 20px 0;
-    width: 100%;
+.downloadBtn input[type=submit] {
+    font-family: "Brandon_med";
     display: flex;
     justify-content: center;
+    align-items: center;
+    border-image: linear-gradient(to right, black, white) 1;
+    background: none;
+    height: 40px;
+    padding: 10px 30px 10px 30px;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    transition: ease-in 0.3s;
+    margin: 0;
+    margin-top: 10%;
+    width: max-content;
+}
+
+.downloadBtn input[type=submit]:hover {
+    background-color: #CDAF4C;
+    border-image: linear-gradient(to right, white, black) 1;
+    padding-left: 40px;
 
 }
-.DownloadPolicy{
+
+.DownloadPolicy {
     font-size: 14px;
     text-align: center;
 }
 
-.QuizeWrap{
+.pop-up-privacy-policy {
+    font-size: 20px;
+    text-align: center;
+    font-family: "Brandon_reg";
+    margin-top: 10%;
+}
+
+.QuizeWrap {
     text-align: center;
 }
-.thanksText{
+
+.thanksText {
     margin-top: 30%;
     padding: 0 10%;
 }
-.downloadAgain{
-   margin-top: 4%;
-   padding: 0 10%;
+
+.downloadAgain {
+    margin-top: 4%;
+    padding: 0 10%;
 }
-.msg{
+
+.msg {
     margin-top: 4%;
 }
-.quizBtn{
+
+.quizBtn {
     margin-top: 6%;
+}
+
+.quizBtn button {
+    width: 70%;
+    height: 35px;
+    border-radius: 5px;
+    padding-left: 20px;
+    margin-top: 10px;
+    transition: .3s ease-in-out;
+    margin-top: 10%;
+    border: 2px solid;
+    border-image: linear-gradient(to right, white, black) 1;
+    background: none;
+}
+
+.quizBtn button:hover {
+    cursor: pointer;
+    background: #CDAF4C;
+    color: #fff;
+    border-image: linear-gradient(to right, black, white) 1;
+}
+
+/* OTP */
+.sendOtpWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    /* width: 70%; */
+}
+
+.input {
+    width: 70%;
+    height: 35px;
+    border-radius: 5px;
+    padding-left: 20px;
+    border: 1px solid gray;
+    margin-top: 10px;
+}
+
+.inputError {
+    width: 70%;
+    height: 35px;
+    border-radius: 5px;
+    padding-left: 20px;
+    border: 1px solid rgb(184, 0, 0);
+    margin-top: 10px;
+}
+
+.inputError:focus {
+    outline: rgb(184, 0, 0);
+}
+
+.sendOtpWrap button {
+    width: 70%;
+    height: 35px;
+    border-radius: 5px;
+    padding-left: 20px;
+    margin-top: 10px;
+    transition: .3s ease-in-out;
+    margin-top: 10%;
+    border: 2px solid;
+    border-image: linear-gradient(to right, white, black) 1;
+    background: none;
+}
+
+.sendOtpWrap button:hover {
+    cursor: pointer;
+    background: #CDAF4C;
+    border-image: linear-gradient(to right, black, white ) 1;
+    color: #fff;
+}
+
+.alertActive {
+    margin-top: 2%;
+    color: rgb(184, 0, 0);
+    font-size: 10px;
+}
+
+.alertInactive {
+    display: none;
+}
+
+@media screen and (max-width: 750px) {
+    .downloadWrap {
+        left: 15vw;
+        min-width: 70vw;
+    }
 }

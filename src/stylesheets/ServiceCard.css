@@ -18,7 +18,8 @@
 .service_card_hover {
     display: none;
 }
-.service_card:hover  .service_card_hover {
+
+.service_card:hover .service_card_hover {
     display: flex;
     position: absolute;
     top: 0;
@@ -31,6 +32,7 @@
     background: #00000049;
     border-radius: 8px;
 }
+
 .service_card_name_main {
     display: flex;
     width: 100%;
@@ -50,7 +52,7 @@
 .service_card_name_main p {
     margin: 0;
     font-size: 32px;
-    
+
 }
 
 .service_card_name_main img {
@@ -77,9 +79,89 @@
     cursor: pointer;
 }
 
-@media screen and (max-width:800px) {
-    .service_card_hover {
-        margin-bottom: 30%;
+.cards_hover_name {
+    font-size: 32px;
+    text-align: left;
+    font-family: "Brandon_med";
+    color: white;
+}
+
+@media screen and (max-width: 750px) {
+
+    .service_card {
+        height: 100%;
+        width: 40vw;
+        position: relative;
+        transition: .3s ease-in-out;
+        color: #fff;
     }
 
+    .service_card img {
+        width: 100%;
+    }
+
+    .service_card_name {
+        width: 70%;
+        padding: 0px 4%;
+    }
+
+    .service_card_name_main p {
+        margin: 0;
+        font-size: 18px;
+
+    }
+
+    .service_card_name_main img {
+        width: 30%;
+    }
+
+    .card_hover_btn {
+        font-family: "Brandon_reg";
+        font-weight: 400;
+        border: 2px solid;
+        border-image: linear-gradient(to right, white, black) 1;
+        background: none;
+        font-size: 18px;
+        text-align: center;
+        color: white;
+        padding: 3px;
+    }
+
+    .card_hover_btn:hover {
+        background-color: #CDAF4C;
+        border-image: linear-gradient(to right, white, black) 1;
+        transition: ease-in 0.3s;
+        padding-left: 10px;
+        cursor: pointer;
+    }
+
+    .service_card:hover .service_card_hover {
+        display: none;
+    }
+
+    .cards_hover_name {
+        font-size: 22px;
+        text-align: left;
+        font-family: "Brandon_med";
+        color: white;
+    }
+
+    
+    .service_card_name_main {
+        bottom: 2px;
+    }
+    
+    .service_card_name {
+        width: 70%;
+        padding: 0px 4%;
+    }
+    
+    .services_section_main p{
+        text-align: center;
+    
+    }
+    
+    .service_card_name_main img {
+        width: 30%;
+    }
 }

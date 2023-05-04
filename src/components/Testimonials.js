@@ -29,7 +29,6 @@ function Testimonials(){
                     star={item.star_img}
                     desc={item.desc}
                     />
-
                 )
             })}
             </Slider>

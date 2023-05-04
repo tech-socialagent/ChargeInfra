@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import Data from "../Data.json";
 import "../stylesheets/First.css";
 import Home from "./Home";
 import Six from "./Six";
 import Forth from "./Forth";
 import { useNavigate } from "react-router-dom";
+import { QuizContext } from "../Context";
+
 const Five = () => {
 
 
@@ -12,14 +14,28 @@ const Five = () => {
   const [prev, setPrev] = useState(false)
   const navigate = useNavigate()
 
+  const { Q5, setQ5 } = useContext(QuizContext);
+
+
   const prevBtnhandle = () => {
     setPrev(true);
   }
 
   const handleNextBtn = () => {
-    setNextBtn(true);
+    if (Q5 != '') {
+      setNextBtn(true);
+    }
+    else {
+      alert("Select One Option")
+    }
   };
 
+  const handleSelection = (answer) => {
+    setQ5(answer);
+  }
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   const FiveCont = () => {
     return (
       <section className="question_main" id="five">
@@ -38,8 +54,7 @@ const Five = () => {
             </h1>
           </div>
           <div className="question_exit_btn">
-            <button >{Data.quize_data.question_header.question_exit_btn}</button>
-
+          <button onClick={() => navigate('/')}>{Data.quize_data.question_header.question_exit_btn}</button>
           </div>
         </div>
         <div className="question_background">
@@ -49,7 +64,14 @@ const Five = () => {
             alt=""
           />
         </div>
+        
         <div className="question_screen">
+        <div className="question_number_mobile">
+            <h1>
+              {Data.quize_data.question_header5.question_number}
+              <span className="unactive_number">/13</span>
+            </h1>
+          </div>
           <div >
             {Data.quize_data.question5.map((question) => (
               <div key={question.id}>
@@ -59,11 +81,8 @@ const Five = () => {
                     {Data.quize_data.answer5.map((answer) => {
                       return (
                         <div className="question_card_main">
-                          <input
-                            type="checkbox"
-                          />
                           <div className="question_card_btn">
-                            <button className="quize_btn">{answer.btn}</button>
+                            <button onClick={() => handleSelection(answer.btn)} className={Q5 == answer.btn ? "question_card_selected_btn" : "quize_btn"}>{answer.btn}</button>
                           </div>
                         </div>
                       );

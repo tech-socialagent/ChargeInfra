@@ -1,23 +1,41 @@
-import React, { useState } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import Data from "../Data.json";
 import "../stylesheets/First.css";
 import Forth from "./Forth";
 import Home from "./Home";
 import Second from "./Second";
 import { useNavigate } from "react-router-dom";
+import { QuizContext } from "../Context";
+
 const Three = () => {
 
   const [nextBtn, setNextBtn] = useState(false);
   const [prev, setPrev] = useState(false)
   const navigate = useNavigate()
 
+  const { Q3, setQ3 } = useContext(QuizContext);
+
   const prevBtnhandle = () => {
     setPrev(true);
   }
 
   const handleNextBtn = () => {
-    setNextBtn(true);
+    if (Q3 != '') {
+      setNextBtn(true);
+    }
+    else {
+      alert("Select One Option")
+    }
   };
+
+  const handleSelection = (answer) => {
+    // setSelect(!select);
+    setQ3(answer);
+    console.log("Q3", Q3)
+  }
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   const ThreeCont = () => {
     return (
@@ -37,7 +55,7 @@ const Three = () => {
             </h1>
           </div>
           <div className="question_exit_btn">
-            <button >{Data.quize_data.question_header.question_exit_btn}</button>
+          <button onClick={() => navigate('/')}>{Data.quize_data.question_header.question_exit_btn}</button>
 
           </div>
         </div>
@@ -49,6 +67,12 @@ const Three = () => {
           />
         </div>
         <div className="question_screen">
+        <div className="question_number_mobile">
+            <h1>
+              {Data.quize_data.question_header3.question_number}
+              <span className="unactive_number">/13</span>
+            </h1>
+          </div>
           <div className="question_main">
             {Data.quize_data.question3.map((question) => (
               <div key={question.id}>
@@ -57,20 +81,15 @@ const Three = () => {
                   <div className="question_container" key={answer.id}>
                     {Data.quize_data.answer2.map((answer) => {
                       return (
-                        <div className="question_card_main">
-                          <input
-                            type="checkbox"
-                          />
-                          <div className="question_card">
+                        <div className="question_card_main"  >
+                          <div onClick={() => handleSelection(answer.name)} className={Q3 == answer.name ? "question_card_selected" : "question_card"}>
                             <img
                               src={require("../assets/questions/" + answer.img)}
                               alt=""
-                              type="checkbox"
                             />
                             <p>{answer.name}</p>
                           </div>
                         </div>
-
                       );
                     })}
 

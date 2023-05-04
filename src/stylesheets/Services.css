@@ -18,12 +18,16 @@
     font-family: "Brandon_reg";
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width: 750px) {
     .services_section_main {
         padding: 5px 30px 5px 30px;
     }
 
     .services_heading {
-        font-size: 40px;
+        font-size: 32px;
+    }      
+    .services_desc {
+        font-size: 18px;
+        font-family: "Brandon_reg";
     }
 }

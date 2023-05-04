@@ -1,3 +1,19 @@
+
+
+
+
+
+
+// Home page Section
+
+
+
+
+
+
+
+
+
 import React from 'react';
 import '../stylesheets/Partner.css';
 import Data from '../Data.json';

@@ -1,10 +1,26 @@
-.how_works_main{
+.how_works_main {
     padding: 10px 60px 5px 60px;
 
 }
-.how_works_main h1{
+
+.how_works_main h1 {
     font-family: "Brandon_reg";
     font-weight: 600;
-font-size: 48px;
-text-align: left;
+    font-size: 48px;
+    text-align: left;
+}
+
+@media screen and (max-width: 750px) {
+    .how_works_main {
+        padding: 3%;
+
+    }
+
+    .how_it_workscard_main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .how_it_works_card{
+        width: 45%;
+    }
 }

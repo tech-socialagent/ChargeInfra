@@ -1,23 +1,68 @@
-import React, { useState } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import Data from "../Data.json";
 import "../stylesheets/First.css";
 import Eleven from "./Eleven";
-import Home from "./Home";
 import Nine from "./Nine";
 import { useNavigate } from "react-router-dom";
+import { QuizContext } from "../Context";
+
 const Ten = () => {
 
   const [nextBtn, setNextBtn] = useState(false);
   const [prev, setPrev] = useState(false)
   const navigate = useNavigate()
 
+  const { Q10, setQ10 } = useContext(QuizContext);
+
   const prevBtnhandle = () => {
     setPrev(true);
   }
 
   const handleNextBtn = () => {
-    setNextBtn(true);
+    if (Q10.one != '') {
+      setNextBtn(true);
+    }
+    else {
+      alert("Select One Option")
+    }
   };
+
+  const handleQ10 = (answer) => {
+    console.log("entere", Q10);
+    if (Q10.one == "") {
+      setQ10(Q10 => ({
+        ...Q10, one: answer
+      }))
+    }
+    else if (Q10.two == "") {
+      setQ10(Q10 => ({
+        ...Q10, two: answer
+      }))
+    }
+    else if(Q10.three == "") {
+      setQ10(Q10 => ({
+        ...Q10, three: answer
+      }))
+    }
+    if(Q10.one == answer) {
+      setQ10(Q10 => ({
+        ...Q10, one: ""
+      }))
+    }
+    if(Q10.two == answer) {
+      setQ10(Q10 => ({
+        ...Q10, two: ""
+      }))
+    }
+    if(Q10.three == answer) {
+      setQ10(Q10 => ({
+        ...Q10, three: ""
+      }))
+    }
+  }
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   const TenCont = () => {
     return (
@@ -37,7 +82,7 @@ const Ten = () => {
             </h1>
           </div>
           <div className="question_exit_btn">
-            <button >{Data.quize_data.question_header.question_exit_btn}</button>
+          <button onClick={() => navigate('/')}>{Data.quize_data.question_header.question_exit_btn}</button>
 
           </div>
         </div>
@@ -49,6 +94,12 @@ const Ten = () => {
           />
         </div>
         <div className="question_screen">
+        <div className="question_number_mobile">
+            <h1>
+              {Data.quize_data.question_header10.question_number}
+              <span className="unactive_number">/13</span>
+            </h1>
+          </div>
           <form className="question_main">
             {Data.quize_data.question10.map((question) => (
               <div key={question.id}>
@@ -57,20 +108,15 @@ const Ten = () => {
                   <div className="question_container" key={answer.id}>
                     {Data.quize_data.answer10.map((answer) => {
                       return (
-                        <form className="question_card_main">
-                          <input
-                            type="checkbox"
-                          />
-                          <div className="question_card">
+                        <div className="question_card_main"  >
+                          <div onClick={() => handleQ10(answer.name)} className={Q10.one == answer.name || Q10.two == answer.name || Q10.three == answer.name ? "question_card_selected" : "question_card"}>
                             <img
                               src={require("../assets/questions/" + answer.img)}
                               alt=""
-                              type="checkbox"
                             />
                             <p>{answer.name}</p>
                           </div>
-                        </form>
-
+                        </div>
                       );
                     })}
 
