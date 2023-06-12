@@ -29,9 +29,9 @@ function Navbar() {
           <AnchorLink href="#about_section">
             <li>ABOUT US</li>
           </AnchorLink>
-          <AnchorLink href="#project_section">
+          {/* <AnchorLink href="#project_section">
             <li>PROJECT</li>
-          </AnchorLink>
+          </AnchorLink> */}
           <AnchorLink href="#services_section">
             <li>SERVICES</li>
           </AnchorLink> 
@@ -41,26 +41,26 @@ function Navbar() {
           <AnchorLink href="#clients_section">
             <li>CLIENTS</li>
           </AnchorLink> */}
-          <AnchorLink href="#testimonials_section">
+          <AnchorLink  href="#testimonials_section">
             <li>TESTIMONIALS</li>
           </AnchorLink>
-          <AnchorLink href="#contact_section">
+          <a href="tel:+918431097343">
             <button className="navbar_contact">Contact Us</button> 
-          </AnchorLink>
+          </a>
         </ul> 
       </div>
       { menuButton && <div className="navbar-left2">
          <ul className="navbar-list">
-          <AnchorLink href="#home_section">
+          <AnchorLink onClick={()=> setMenuButton(false)} href="#home_section">
             <li>HOME</li>
           </AnchorLink>
-          <AnchorLink href="#about_section">
+          <AnchorLink onClick={()=> setMenuButton(false)} href="#about_section">
             <li>ABOUT US</li>
           </AnchorLink>
-          <AnchorLink href="#project_section">
+          {/* <AnchorLink href="#project_section">
             <li>PROJECT</li>
-          </AnchorLink>
-          <AnchorLink href="#services_section">
+          </AnchorLink> */}
+          <AnchorLink onClick={()=> setMenuButton(false)} href="#services_section">
             <li>SERVICES</li>
           </AnchorLink> 
           {/* <AnchorLink href="#ourTeam_section">
@@ -69,12 +69,12 @@ function Navbar() {
           <AnchorLink href="#clients_section">
             <li>CLIENTS</li>
           </AnchorLink> */}
-          <AnchorLink href="#testimonials_section">
+          <AnchorLink onClick={()=> setMenuButton(false)} href="#testimonials_section">
             <li>TESTIMONIALS</li>
           </AnchorLink>
-          <AnchorLink href="#contact_section">
+          <a onClick={()=> setMenuButton(false)} href="tel:+918431097343">
             <li><button className="navbar_contact">Contact Us</button>  </li>
-          </AnchorLink>
+          </a>
         </ul> 
       </div> }
       <div id="mobile" onClick={handleViewCancel}>
